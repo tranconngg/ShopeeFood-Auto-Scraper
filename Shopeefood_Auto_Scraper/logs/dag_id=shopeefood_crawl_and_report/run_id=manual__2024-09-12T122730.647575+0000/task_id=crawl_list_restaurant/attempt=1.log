@@ -1,0 +1,78 @@
+[2024-09-12T12:27:32.067+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:27:30.647575+00:00 [queued]>
+[2024-09-12T12:27:32.078+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:27:30.647575+00:00 [queued]>
+[2024-09-12T12:27:32.079+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T12:27:32.096+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-12 12:27:30.647575+00:00
+[2024-09-12T12:27:32.101+0000] {standard_task_runner.py:60} INFO - Started process 6569 to run task
+[2024-09-12T12:27:32.105+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'manual__2024-09-12T12:27:30.647575+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp3l39iq7s']
+[2024-09-12T12:27:32.108+0000] {standard_task_runner.py:88} INFO - Job 44: Subtask crawl_list_restaurant
+[2024-09-12T12:27:32.162+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:27:30.647575+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T12:27:32.364+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T12:27:30.647575+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T12:27:30.647575+00:00'
+[2024-09-12T12:27:46.337+0000] {logging_mixin.py:188} INFO - Lỗi khi chờ đợi sản phẩm: Message: 
+Stacktrace:
+#0 0x55b0fd4926b3 <unknown>
+#1 0x55b0fd1681e7 <unknown>
+#2 0x55b0fd1af566 <unknown>
+#3 0x55b0fd1af651 <unknown>
+#4 0x55b0fd1eca74 <unknown>
+#5 0x55b0fd1d10ed <unknown>
+#6 0x55b0fd1ea322 <unknown>
+#7 0x55b0fd1d0e93 <unknown>
+#8 0x55b0fd1a3934 <unknown>
+#9 0x55b0fd1a471e <unknown>
+#10 0x55b0fd457cb8 <unknown>
+#11 0x55b0fd45bbf0 <unknown>
+#12 0x55b0fd46619c <unknown>
+#13 0x55b0fd45c808 <unknown>
+#14 0x55b0fd42927f <unknown>
+#15 0x55b0fd480e88 <unknown>
+#16 0x55b0fd481059 <unknown>
+#17 0x55b0fd491843 <unknown>
+#18 0x7fd4d44fe609 start_thread
+[2024-09-12T12:27:46.372+0000] {logging_mixin.py:188} INFO - Lỗi khi chuyển trang hoặc crawl trang: Message: no such element: Unable to locate element: {"method":"css selector","selector":"a[href="#"] .icon-paging-next"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55b0fd4926b3 <unknown>
+#1 0x55b0fd1681e7 <unknown>
+#2 0x55b0fd1af566 <unknown>
+#3 0x55b0fd1af651 <unknown>
+#4 0x55b0fd1eca74 <unknown>
+#5 0x55b0fd1d10ed <unknown>
+#6 0x55b0fd1ea322 <unknown>
+#7 0x55b0fd1d0e93 <unknown>
+#8 0x55b0fd1a3934 <unknown>
+#9 0x55b0fd1a471e <unknown>
+#10 0x55b0fd457cb8 <unknown>
+#11 0x55b0fd45bbf0 <unknown>
+#12 0x55b0fd46619c <unknown>
+#13 0x55b0fd45c808 <unknown>
+#14 0x55b0fd42927f <unknown>
+#15 0x55b0fd480e88 <unknown>
+#16 0x55b0fd481059 <unknown>
+#17 0x55b0fd491843 <unknown>
+#18 0x7fd4d44fe609 start_thread
+[2024-09-12T12:27:46.455+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/crawler/crawl_list_restaurant.py", line 55, in crawl_list_restaurant
+    df.columns=['name', 'promote', 'res_url']
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 6002, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 730, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 225, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/internals/base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 3 elements
+[2024-09-12T12:27:46.475+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240912T122730, start_date=20240912T122732, end_date=20240912T122746
+[2024-09-12T12:27:46.487+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 44 for task crawl_list_restaurant (Length mismatch: Expected axis has 0 elements, new values have 3 elements; 6569)
+[2024-09-12T12:27:46.506+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-09-12T12:27:46.532+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

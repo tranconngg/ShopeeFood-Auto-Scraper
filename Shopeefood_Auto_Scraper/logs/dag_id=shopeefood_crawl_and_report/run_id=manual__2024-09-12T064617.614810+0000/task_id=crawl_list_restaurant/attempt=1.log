@@ -1,0 +1,36 @@
+[2024-09-12T06:46:19.069+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T06:46:17.614810+00:00 [queued]>
+[2024-09-12T06:46:19.080+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T06:46:17.614810+00:00 [queued]>
+[2024-09-12T06:46:19.081+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T06:46:19.103+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-12 06:46:17.614810+00:00
+[2024-09-12T06:46:19.108+0000] {standard_task_runner.py:60} INFO - Started process 2682 to run task
+[2024-09-12T06:46:19.111+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'manual__2024-09-12T06:46:17.614810+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp4nkt3o67']
+[2024-09-12T06:46:19.113+0000] {standard_task_runner.py:88} INFO - Job 48: Subtask crawl_list_restaurant
+[2024-09-12T06:46:19.165+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T06:46:17.614810+00:00 [running]> on host f432431e979d
+[2024-09-12T06:46:19.253+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T06:46:17.614810+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T06:46:17.614810+00:00'
+[2024-09-12T06:46:32.948+0000] {logging_mixin.py:188} INFO - Lỗi khi chờ đợi sản phẩm: Message:
+[2024-09-12T06:46:32.992+0000] {logging_mixin.py:188} INFO - Lỗi khi chuyển trang hoặc crawl trang: Message: no such element: Unable to locate element: {"method":"css selector","selector":"a[href="#"] .icon-paging-next"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5580c5f726b3 <unknown>
+#1 0x5580c5c481e7 <unknown>
+#2 0x5580c5c8f566 <unknown>
+#3 0x5580c5c8f651 <unknown>
+#4 0x5580c5ccca74 <unknown>
+#5 0x5580c5cb10ed <unknown>
+#6 0x5580c5cca322 <unknown>
+#7 0x5580c5cb0e93 <unknown>
+#8 0x5580c5c83934 <unknown>
+#9 0x5580c5c8471e <unknown>
+#10 0x5580c5f37cb8 <unknown>
+#11 0x5580c5f3bbf0 <unknown>
+#12 0x5580c5f4619c <unknown>
+#13 0x5580c5f3c808 <unknown>
+#14 0x5580c5f0927f <unknown>
+#15 0x5580c5f60e88 <unknown>
+#16 0x5580c5f61059 <unknown>
+#17 0x5580c5f71843 <unknown>
+#18 0x7f68fbd5e609 start_thread
+[2024-09-12T06:46:33.070+0000] {python.py:202} INFO - Done. Returned value was: []
+[2024-09-12T06:46:33.252+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240912T064617, start_date=20240912T064619, end_date=20240912T064633
+[2024-09-12T06:46:33.305+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T06:46:33.337+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

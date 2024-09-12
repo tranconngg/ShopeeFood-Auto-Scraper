@@ -1,0 +1,28 @@
+[2024-09-12T12:33:16.507+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:33:14.159876+00:00 [queued]>
+[2024-09-12T12:33:16.533+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:33:14.159876+00:00 [queued]>
+[2024-09-12T12:33:16.535+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T12:33:16.571+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-12 12:33:14.159876+00:00
+[2024-09-12T12:33:16.582+0000] {standard_task_runner.py:60} INFO - Started process 6971 to run task
+[2024-09-12T12:33:16.589+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'manual__2024-09-12T12:33:14.159876+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpf8x0kr6r']
+[2024-09-12T12:33:16.594+0000] {standard_task_runner.py:88} INFO - Job 46: Subtask crawl_list_restaurant
+[2024-09-12T12:33:16.724+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:33:14.159876+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T12:33:17.202+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T12:33:14.159876+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T12:33:14.159876+00:00'
+[2024-09-12T12:33:23.706+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/crawler/crawl_list_restaurant.py", line 36, in crawl_list_restaurant
+    crawl_page()
+  File "/opt/airflow/dags/crawler/crawl_list_restaurant.py", line 23, in crawl_page
+    for element in elements:
+TypeError: 'WebElement' object is not iterable
+[2024-09-12T12:33:23.728+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240912T123314, start_date=20240912T123316, end_date=20240912T123323
+[2024-09-12T12:33:23.748+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 46 for task crawl_list_restaurant ('WebElement' object is not iterable; 6971)
+[2024-09-12T12:33:23.783+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-09-12T12:33:23.818+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

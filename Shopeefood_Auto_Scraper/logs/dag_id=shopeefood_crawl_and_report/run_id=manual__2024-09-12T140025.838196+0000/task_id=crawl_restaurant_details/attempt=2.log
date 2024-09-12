@@ -1,0 +1,14 @@
+[2024-09-12T14:19:56.762+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T14:00:25.838196+00:00 [queued]>
+[2024-09-12T14:19:56.770+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T14:00:25.838196+00:00 [queued]>
+[2024-09-12T14:19:56.771+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-09-12T14:19:56.784+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_restaurant_details> on 2024-09-12 14:00:25.838196+00:00
+[2024-09-12T14:19:56.788+0000] {standard_task_runner.py:60} INFO - Started process 14553 to run task
+[2024-09-12T14:19:56.791+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_restaurant_details', 'manual__2024-09-12T14:00:25.838196+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp30i_6tlw']
+[2024-09-12T14:19:56.793+0000] {standard_task_runner.py:88} INFO - Job 95: Subtask crawl_restaurant_details
+[2024-09-12T14:19:56.838+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T14:00:25.838196+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T14:19:57.019+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_restaurant_details' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T14:00:25.838196+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T14:00:25.838196+00:00'
+[2024-09-12T14:22:43.731+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-09-12T14:22:43.737+0000] {process_utils.py:131} INFO - Sending 15 to group 14553. PIDs of all processes in the group: [14553]
+[2024-09-12T14:22:43.738+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 14553
+[2024-09-12T14:22:43.739+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-09-12T14:22:43.792+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=14553, status='terminated', exitcode=0, started='14:19:56') (14553) terminated with exit code 0

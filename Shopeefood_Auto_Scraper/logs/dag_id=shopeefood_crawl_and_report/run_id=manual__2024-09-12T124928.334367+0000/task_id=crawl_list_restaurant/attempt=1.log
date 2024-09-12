@@ -1,0 +1,64 @@
+[2024-09-12T12:49:29.790+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:49:28.334367+00:00 [queued]>
+[2024-09-12T12:49:29.799+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:49:28.334367+00:00 [queued]>
+[2024-09-12T12:49:29.800+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T12:49:29.821+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-12 12:49:28.334367+00:00
+[2024-09-12T12:49:29.829+0000] {standard_task_runner.py:60} INFO - Started process 8155 to run task
+[2024-09-12T12:49:29.832+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'manual__2024-09-12T12:49:28.334367+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp_b3no97s']
+[2024-09-12T12:49:29.835+0000] {standard_task_runner.py:88} INFO - Job 62: Subtask crawl_list_restaurant
+[2024-09-12T12:49:29.892+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant manual__2024-09-12T12:49:28.334367+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T12:49:30.116+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T12:49:28.334367+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T12:49:28.334367+00:00'
+[2024-09-12T12:52:56.083+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2024-09-12T12:52:56.086+0000] {process_utils.py:131} INFO - Sending 15 to group 8155. PIDs of all processes in the group: [8155]
+[2024-09-12T12:52:56.086+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 8155
+[2024-09-12T12:52:56.088+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-09-12T12:52:56.098+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/crawler/crawl_list_restaurant.py", line 9, in crawl_list_restaurant
+    driver = get_driver()
+  File "/opt/airflow/dags/crawler/get_driver.py", line 7, in get_driver
+    driver = webdriver.Remote(
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 212, in __init__
+    self.start_session(capabilities)
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 299, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 352, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 306, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 326, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/request.py", line 81, in request
+    return self.request_encode_body(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/request.py", line 173, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-09-12T12:52:56.115+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240912T124928, start_date=20240912T125251, end_date=20240912T125256
+[2024-09-12T12:52:56.128+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 62 for task crawl_list_restaurant (Task received SIGTERM signal; 8155)
+[2024-09-12T12:52:56.180+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=8155, status='terminated', exitcode=1, started='12:49:28') (8155) terminated with exit code 1

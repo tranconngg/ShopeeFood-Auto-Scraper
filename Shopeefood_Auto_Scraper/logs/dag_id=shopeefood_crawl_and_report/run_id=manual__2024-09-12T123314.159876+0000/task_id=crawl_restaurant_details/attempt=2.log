@@ -1,0 +1,39 @@
+[2024-09-12T12:47:08.793+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T12:33:14.159876+00:00 [queued]>
+[2024-09-12T12:47:08.804+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T12:33:14.159876+00:00 [queued]>
+[2024-09-12T12:47:08.806+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 3
+[2024-09-12T12:47:08.822+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_restaurant_details> on 2024-09-12 12:33:14.159876+00:00
+[2024-09-12T12:47:08.832+0000] {standard_task_runner.py:60} INFO - Started process 7984 to run task
+[2024-09-12T12:47:08.835+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_restaurant_details', 'manual__2024-09-12T12:33:14.159876+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpb_7fen4l']
+[2024-09-12T12:47:08.837+0000] {standard_task_runner.py:88} INFO - Job 59: Subtask crawl_restaurant_details
+[2024-09-12T12:47:08.894+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T12:33:14.159876+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T12:47:09.117+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_restaurant_details' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T12:33:14.159876+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T12:33:14.159876+00:00'
+[2024-09-12T12:48:55.097+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2024-09-12T12:48:55.105+0000] {process_utils.py:131} INFO - Sending 15 to group 7984. PIDs of all processes in the group: [7984]
+[2024-09-12T12:48:55.107+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 7984
+[2024-09-12T12:48:55.109+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-09-12T12:48:55.145+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/crawler/crawl_restaurant_details.py", line 95, in crawl_restaurant_details_thread
+    executors_list.append(executor.submit(crawl_restaurant_details_defind, chunk, data, driver_name))
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 644, in __exit__
+    self.shutdown(wait=True)
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 236, in shutdown
+    t.join()
+  File "/usr/local/lib/python3.8/threading.py", line 1011, in join
+    self._wait_for_tstate_lock()
+  File "/usr/local/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-09-12T12:48:55.178+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=shopeefood_crawl_and_report, task_id=crawl_restaurant_details, execution_date=20240912T123314, start_date=20240912T124708, end_date=20240912T124855
+[2024-09-12T12:48:55.223+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 59 for task crawl_restaurant_details (Task received SIGTERM signal; 7984)
+[2024-09-12T12:48:55.284+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=7984, status='terminated', exitcode=1, started='12:47:07') (7984) terminated with exit code 1

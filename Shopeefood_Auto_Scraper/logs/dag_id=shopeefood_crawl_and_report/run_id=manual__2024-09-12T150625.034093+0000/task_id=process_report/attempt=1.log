@@ -1,0 +1,32 @@
+[2024-09-12T15:07:02.647+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.process_report manual__2024-09-12T15:06:25.034093+00:00 [queued]>
+[2024-09-12T15:07:02.660+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.process_report manual__2024-09-12T15:06:25.034093+00:00 [queued]>
+[2024-09-12T15:07:02.661+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T15:07:02.680+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): process_report> on 2024-09-12 15:06:25.034093+00:00
+[2024-09-12T15:07:02.687+0000] {standard_task_runner.py:60} INFO - Started process 17588 to run task
+[2024-09-12T15:07:02.690+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'process_report', 'manual__2024-09-12T15:06:25.034093+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpr13eb1bq']
+[2024-09-12T15:07:02.693+0000] {standard_task_runner.py:88} INFO - Job 122: Subtask process_report
+[2024-09-12T15:07:02.757+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.process_report manual__2024-09-12T15:06:25.034093+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T15:07:03.011+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='process_report' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T15:06:25.034093+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T15:06:25.034093+00:00'
+[2024-09-12T15:07:03.043+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/report/process_data.py", line 55, in process_get_report
+    df[['min_cost', 'max_cost']] = df['cost_res'].apply(lambda x: pd.Series(parse_cost_range(x)))
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 3938, in __setitem__
+    self._setitem_array(key, value)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 3997, in _setitem_array
+    self._iset_not_inplace(key, value)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 4016, in _iset_not_inplace
+    raise ValueError("Columns must be same length as key")
+ValueError: Columns must be same length as key
+[2024-09-12T15:07:03.071+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=shopeefood_crawl_and_report, task_id=process_report, execution_date=20240912T150625, start_date=20240912T150702, end_date=20240912T150703
+[2024-09-12T15:07:03.094+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 122 for task process_report (Columns must be same length as key; 17588)
+[2024-09-12T15:07:03.146+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-09-12T15:07:03.195+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,44 @@
+[2024-09-11T06:22:11.067+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.load_db scheduled__2024-09-10T00:00:00+00:00 [queued]>
+[2024-09-11T06:22:11.078+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.load_db scheduled__2024-09-10T00:00:00+00:00 [queued]>
+[2024-09-11T06:22:11.079+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-11T06:22:11.093+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): load_db> on 2024-09-10 00:00:00+00:00
+[2024-09-11T06:22:11.100+0000] {standard_task_runner.py:60} INFO - Started process 813 to run task
+[2024-09-11T06:22:11.104+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'load_db', 'scheduled__2024-09-10T00:00:00+00:00', '--job-id', '88', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp8nnows4k']
+[2024-09-11T06:22:11.107+0000] {standard_task_runner.py:88} INFO - Job 88: Subtask load_db
+[2024-09-11T06:22:11.156+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.load_db scheduled__2024-09-10T00:00:00+00:00 [running]> on host 32137a89b089
+[2024-09-11T06:22:11.235+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='load_db' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T00:00:00+00:00'
+[2024-09-11T06:22:11.246+0000] {base.py:83} INFO - Using connection ID 'my_mysql_conn' for task execution.
+[2024-09-11T06:22:11.504+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-09-11T06:22:11.513+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=load_db, execution_date=20240910T000000, start_date=20240911T062211, end_date=20240911T062211
+[2024-09-11T06:22:11.558+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-11T06:22:11.573+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-11T06:52:53.773+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.load_db scheduled__2024-09-10T00:00:00+00:00 [queued]>
+[2024-09-11T06:52:53.793+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.load_db scheduled__2024-09-10T00:00:00+00:00 [queued]>
+[2024-09-11T06:52:53.795+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-11T06:52:53.813+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): load_db> on 2024-09-10 00:00:00+00:00
+[2024-09-11T06:52:53.822+0000] {standard_task_runner.py:60} INFO - Started process 602 to run task
+[2024-09-11T06:52:53.827+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'load_db', 'scheduled__2024-09-10T00:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpnxuik8pr']
+[2024-09-11T06:52:53.830+0000] {standard_task_runner.py:88} INFO - Job 11: Subtask load_db
+[2024-09-11T06:52:53.902+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.load_db scheduled__2024-09-10T00:00:00+00:00 [running]> on host f432431e979d
+[2024-09-11T06:52:54.020+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='load_db' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T00:00:00+00:00'
+[2024-09-11T06:52:54.226+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load/load_to_mysql.py", line 8, in load_data
+    connection = hook.get_connection('my_mysql_conn')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 514, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `my_mysql_conn` isn't defined
+[2024-09-11T06:52:54.242+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=shopeefood_crawl_and_report, task_id=load_db, execution_date=20240910T000000, start_date=20240911T065253, end_date=20240911T065254
+[2024-09-11T06:52:54.264+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 11 for task load_db (The conn_id `my_mysql_conn` isn't defined; 602)
+[2024-09-11T06:52:54.281+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-09-11T06:52:54.306+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

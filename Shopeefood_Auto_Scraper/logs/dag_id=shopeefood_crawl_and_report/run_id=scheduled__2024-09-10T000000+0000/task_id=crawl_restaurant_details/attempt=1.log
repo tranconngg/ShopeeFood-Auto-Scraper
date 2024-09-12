@@ -1,0 +1,26 @@
+[2024-09-11T06:18:11.785+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details scheduled__2024-09-10T00:00:00+00:00 [queued]>
+[2024-09-11T06:18:11.799+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details scheduled__2024-09-10T00:00:00+00:00 [queued]>
+[2024-09-11T06:18:11.800+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-11T06:18:11.814+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_restaurant_details> on 2024-09-10 00:00:00+00:00
+[2024-09-11T06:18:11.820+0000] {standard_task_runner.py:60} INFO - Started process 568 to run task
+[2024-09-11T06:18:11.824+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_restaurant_details', 'scheduled__2024-09-10T00:00:00+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp2w4_hk65']
+[2024-09-11T06:18:11.828+0000] {standard_task_runner.py:88} INFO - Job 85: Subtask crawl_restaurant_details
+[2024-09-11T06:18:11.884+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details scheduled__2024-09-10T00:00:00+00:00 [running]> on host 32137a89b089
+[2024-09-11T06:18:11.986+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_restaurant_details' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T00:00:00+00:00'
+[2024-09-11T06:22:03.208+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-09-11T06:22:03.220+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_restaurant_details, execution_date=20240910T000000, start_date=20240911T061811, end_date=20240911T062203
+[2024-09-11T06:22:03.261+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-11T06:22:03.283+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-11T06:48:40.027+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details scheduled__2024-09-10T00:00:00+00:00 [queued]>
+[2024-09-11T06:48:40.037+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details scheduled__2024-09-10T00:00:00+00:00 [queued]>
+[2024-09-11T06:48:40.038+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-11T06:48:40.049+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_restaurant_details> on 2024-09-10 00:00:00+00:00
+[2024-09-11T06:48:40.054+0000] {standard_task_runner.py:60} INFO - Started process 343 to run task
+[2024-09-11T06:48:40.057+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_restaurant_details', 'scheduled__2024-09-10T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpcksf3sdj']
+[2024-09-11T06:48:40.060+0000] {standard_task_runner.py:88} INFO - Job 6: Subtask crawl_restaurant_details
+[2024-09-11T06:48:40.103+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details scheduled__2024-09-10T00:00:00+00:00 [running]> on host f432431e979d
+[2024-09-11T06:48:40.166+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_restaurant_details' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T00:00:00+00:00'
+[2024-09-11T06:52:42.905+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-09-11T06:52:42.923+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_restaurant_details, execution_date=20240910T000000, start_date=20240911T064840, end_date=20240911T065242
+[2024-09-11T06:52:42.981+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-11T06:52:43.024+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

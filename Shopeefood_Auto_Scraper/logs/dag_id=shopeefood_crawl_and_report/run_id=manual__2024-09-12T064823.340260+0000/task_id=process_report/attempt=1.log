@@ -1,0 +1,29 @@
+[2024-09-12T06:55:46.822+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.process_report manual__2024-09-12T06:48:23.340260+00:00 [queued]>
+[2024-09-12T06:55:46.832+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.process_report manual__2024-09-12T06:48:23.340260+00:00 [queued]>
+[2024-09-12T06:55:46.833+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T06:55:46.845+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): process_report> on 2024-09-12 06:48:23.340260+00:00
+[2024-09-12T06:55:46.850+0000] {standard_task_runner.py:60} INFO - Started process 3250 to run task
+[2024-09-12T06:55:46.852+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'process_report', 'manual__2024-09-12T06:48:23.340260+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpcmjchdkj']
+[2024-09-12T06:55:46.854+0000] {standard_task_runner.py:88} INFO - Job 54: Subtask process_report
+[2024-09-12T06:55:46.899+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.process_report manual__2024-09-12T06:48:23.340260+00:00 [running]> on host f432431e979d
+[2024-09-12T06:55:46.965+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='process_report' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T06:48:23.340260+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T06:48:23.340260+00:00'
+[2024-09-12T06:55:47.140+0000] {python.py:202} INFO - Done. Returned value was:          Khu vực  ...  Khoảng giá trung bình (Vnđ)
+0        Ba Đình  ...              21,900 - 96,900
+1    Bắc Từ Liêm  ...             25,429 - 147,857
+2       Cầu Giấy  ...              26,655 - 80,138
+3   Hai Bà Trưng  ...             30,905 - 115,429
+4       Hoài Đức  ...              17,500 - 35,000
+5      Hoàn Kiếm  ...              15,000 - 50,000
+6      Hoàng Mai  ...             19,333 - 598,000
+7        Hà Đông  ...              28,733 - 76,667
+8      Long Biên  ...              25,000 - 40,000
+9    Nam Từ Liêm  ...             24,400 - 195,400
+10     Thanh Trì  ...             28,000 - 150,000
+11    Thanh Xuân  ...              25,750 - 66,583
+12        Tây Hồ  ...              30,000 - 45,000
+13       Đống Đa  ...              21,326 - 84,870
+
+[14 rows x 5 columns]
+[2024-09-12T06:55:47.179+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=process_report, execution_date=20240912T064823, start_date=20240912T065546, end_date=20240912T065547
+[2024-09-12T06:55:47.228+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T06:55:47.250+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

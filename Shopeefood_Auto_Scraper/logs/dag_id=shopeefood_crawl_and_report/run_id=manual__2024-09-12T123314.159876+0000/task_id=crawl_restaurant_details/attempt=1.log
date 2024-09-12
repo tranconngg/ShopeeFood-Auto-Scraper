@@ -1,0 +1,128 @@
+[2024-09-12T12:39:38.560+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T12:33:14.159876+00:00 [queued]>
+[2024-09-12T12:39:38.586+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T12:33:14.159876+00:00 [queued]>
+[2024-09-12T12:39:38.588+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T12:39:38.628+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_restaurant_details> on 2024-09-12 12:33:14.159876+00:00
+[2024-09-12T12:39:38.642+0000] {standard_task_runner.py:60} INFO - Started process 7449 to run task
+[2024-09-12T12:39:38.651+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_restaurant_details', 'manual__2024-09-12T12:33:14.159876+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmphri9rs5s']
+[2024-09-12T12:39:38.657+0000] {standard_task_runner.py:88} INFO - Job 54: Subtask crawl_restaurant_details
+[2024-09-12T12:39:38.780+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T12:33:14.159876+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T12:39:39.274+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_restaurant_details' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T12:33:14.159876+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T12:33:14.159876+00:00'
+[2024-09-12T12:45:38.362+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/crawler/crawl_restaurant_details.py", line 99, in crawl_restaurant_details_thread
+    task.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/airflow/dags/crawler/crawl_restaurant_details.py", line 10, in crawl_restaurant_details_defind
+    driver = get_driver()
+  File "/opt/airflow/dags/crawler/get_driver.py", line 7, in get_driver
+    driver = webdriver.Remote(
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 212, in __init__
+    self.start_session(capabilities)
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 299, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: Could not start a new session. New session request timed out 
+Host info: host: '6bc4e77b586e', ip: '172.19.0.4'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.153.1-microsoft-standard-WSL2', java.version: '11.0.20.1'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.addToQueue (LocalNewSessionQueue.java:224)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.lambda$new$0 (NewSessionQueue.java:68)
+    at org.openqa.selenium.remote.http.Route$TemplatizedRoute.handle (Route.java:193)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.execute (NewSessionQueue.java:128)
+    at org.openqa.selenium.remote.tracing.SpanWrappedHttpHandler.execute (SpanWrappedHttpHandler.java:91)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:63)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.grid.router.Router.execute (Router.java:87)
+    at org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders.lambda$apply$0 (EnsureSpecCompliantResponseHeaders.java:34)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:63)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$NestedRoute.handle (Route.java:271)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0 (AddWebDriverSpecHeaders.java:35)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:63)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:63)
+    at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0 (SeleniumHandler.java:44)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829)
+[2024-09-12T12:45:38.398+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=shopeefood_crawl_and_report, task_id=crawl_restaurant_details, execution_date=20240912T123314, start_date=20240912T123938, end_date=20240912T124538
+[2024-09-12T12:45:38.419+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 54 for task crawl_restaurant_details (Message: Could not start a new session. New session request timed out 
+Host info: host: '6bc4e77b586e', ip: '172.19.0.4'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.153.1-microsoft-standard-WSL2', java.version: '11.0.20.1'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.sessionqueue.local.LocalNewSessionQueue.addToQueue (LocalNewSessionQueue.java:224)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.lambda$new$0 (NewSessionQueue.java:68)
+    at org.openqa.selenium.remote.http.Route$TemplatizedRoute.handle (Route.java:193)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.grid.sessionqueue.NewSessionQueue.execute (NewSessionQueue.java:128)
+    at org.openqa.selenium.remote.tracing.SpanWrappedHttpHandler.execute (SpanWrappedHttpHandler.java:91)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:63)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.grid.router.Router.execute (Router.java:87)
+    at org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders.lambda$apply$0 (EnsureSpecCompliantResponseHeaders.java:34)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:63)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$NestedRoute.handle (Route.java:271)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.http.Route$CombinedRoute.handle (Route.java:345)
+    at org.openqa.selenium.remote.http.Route.execute (Route.java:69)
+    at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0 (AddWebDriverSpecHeaders.java:35)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:63)
+    at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0 (ErrorFilter.java:44)
+    at org.openqa.selenium.remote.http.Filter$1.execute (Filter.java:63)
+    at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0 (SeleniumHandler.java:44)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)
+    at java.lang.Thread.run (Thread.java:829); 7449)
+[2024-09-12T12:45:38.444+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-09-12T12:45:38.473+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

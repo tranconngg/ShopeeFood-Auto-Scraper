@@ -1,0 +1,78 @@
+[2024-09-12T13:19:27.722+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T13:18:16.126550+00:00 [queued]>
+[2024-09-12T13:19:27.740+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T13:18:16.126550+00:00 [queued]>
+[2024-09-12T13:19:27.741+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T13:19:27.766+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_restaurant_details> on 2024-09-12 13:18:16.126550+00:00
+[2024-09-12T13:19:27.775+0000] {standard_task_runner.py:60} INFO - Started process 10311 to run task
+[2024-09-12T13:19:27.782+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_restaurant_details', 'manual__2024-09-12T13:18:16.126550+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp1f6zd8e1']
+[2024-09-12T13:19:27.786+0000] {standard_task_runner.py:88} INFO - Job 80: Subtask crawl_restaurant_details
+[2024-09-12T13:19:27.870+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T13:18:16.126550+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T13:19:28.278+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_restaurant_details' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T13:18:16.126550+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T13:18:16.126550+00:00'
+[2024-09-12T13:25:22.616+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/crawler/crawl_restaurant_details.py", line 99, in crawl_restaurant_details_thread
+    task.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/airflow/dags/crawler/crawl_restaurant_details.py", line 16, in crawl_restaurant_details_defind
+    element = wait.until(
+  File "/home/airflow/.local/lib/python3.8/site-packages/selenium/webdriver/support/wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x562420d806b3 <unknown>
+#1 0x562420a561e7 <unknown>
+#2 0x562420a9d566 <unknown>
+#3 0x562420a9d651 <unknown>
+#4 0x562420adaa74 <unknown>
+#5 0x562420abf0ed <unknown>
+#6 0x562420ad8322 <unknown>
+#7 0x562420abee93 <unknown>
+#8 0x562420a91934 <unknown>
+#9 0x562420a9271e <unknown>
+#10 0x562420d45cb8 <unknown>
+#11 0x562420d49bf0 <unknown>
+#12 0x562420d5419c <unknown>
+#13 0x562420d4a808 <unknown>
+#14 0x562420d1727f <unknown>
+#15 0x562420d6ee88 <unknown>
+#16 0x562420d6f059 <unknown>
+#17 0x562420d7f843 <unknown>
+#18 0x7f7d49911609 start_thread
+
+[2024-09-12T13:25:22.645+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=shopeefood_crawl_and_report, task_id=crawl_restaurant_details, execution_date=20240912T131816, start_date=20240912T131927, end_date=20240912T132522
+[2024-09-12T13:25:22.673+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 80 for task crawl_restaurant_details (Message: 
+Stacktrace:
+#0 0x562420d806b3 <unknown>
+#1 0x562420a561e7 <unknown>
+#2 0x562420a9d566 <unknown>
+#3 0x562420a9d651 <unknown>
+#4 0x562420adaa74 <unknown>
+#5 0x562420abf0ed <unknown>
+#6 0x562420ad8322 <unknown>
+#7 0x562420abee93 <unknown>
+#8 0x562420a91934 <unknown>
+#9 0x562420a9271e <unknown>
+#10 0x562420d45cb8 <unknown>
+#11 0x562420d49bf0 <unknown>
+#12 0x562420d5419c <unknown>
+#13 0x562420d4a808 <unknown>
+#14 0x562420d1727f <unknown>
+#15 0x562420d6ee88 <unknown>
+#16 0x562420d6f059 <unknown>
+#17 0x562420d7f843 <unknown>
+#18 0x7f7d49911609 start_thread
+; 10311)
+[2024-09-12T13:25:22.717+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-09-12T13:25:22.754+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

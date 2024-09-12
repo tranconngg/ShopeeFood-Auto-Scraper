@@ -1,0 +1,14 @@
+[2024-09-10T19:16:29.566+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.send_report manual__2024-09-10T19:03:42.935865+00:00 [queued]>
+[2024-09-10T19:16:29.589+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.send_report manual__2024-09-10T19:03:42.935865+00:00 [queued]>
+[2024-09-10T19:16:29.591+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-10T19:16:29.620+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): send_report> on 2024-09-10 19:03:42.935865+00:00
+[2024-09-10T19:16:29.632+0000] {standard_task_runner.py:60} INFO - Started process 3680 to run task
+[2024-09-10T19:16:29.640+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'send_report', 'manual__2024-09-10T19:03:42.935865+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpi7mpqdiu']
+[2024-09-10T19:16:29.646+0000] {standard_task_runner.py:88} INFO - Job 39: Subtask send_report
+[2024-09-10T19:16:29.788+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.send_report manual__2024-09-10T19:03:42.935865+00:00 [running]> on host 32137a89b089
+[2024-09-10T19:16:30.477+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='send_report' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T19:03:42.935865+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-10T19:03:42.935865+00:00'
+[2024-09-10T19:16:33.340+0000] {logging_mixin.py:188} INFO - Email vừa được gửi thành công!
+[2024-09-10T19:16:33.342+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-09-10T19:16:33.376+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=send_report, execution_date=20240910T190342, start_date=20240910T191629, end_date=20240910T191633
+[2024-09-10T19:16:33.483+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-10T19:16:33.557+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

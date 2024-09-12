@@ -1,0 +1,13 @@
+[2024-09-12T06:49:06.654+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T06:48:23.340260+00:00 [queued]>
+[2024-09-12T06:49:06.668+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T06:48:23.340260+00:00 [queued]>
+[2024-09-12T06:49:06.669+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T06:49:06.689+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_restaurant_details> on 2024-09-12 06:48:23.340260+00:00
+[2024-09-12T06:49:06.696+0000] {standard_task_runner.py:60} INFO - Started process 2871 to run task
+[2024-09-12T06:49:06.699+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_restaurant_details', 'manual__2024-09-12T06:48:23.340260+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpdtzyrbvc']
+[2024-09-12T06:49:06.701+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask crawl_restaurant_details
+[2024-09-12T06:49:06.759+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-09-12T06:48:23.340260+00:00 [running]> on host f432431e979d
+[2024-09-12T06:49:06.845+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_restaurant_details' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T06:48:23.340260+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-12T06:48:23.340260+00:00'
+[2024-09-12T06:55:45.882+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-09-12T06:55:45.894+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_restaurant_details, execution_date=20240912T064823, start_date=20240912T064906, end_date=20240912T065545
+[2024-09-12T06:55:45.926+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T06:55:45.947+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

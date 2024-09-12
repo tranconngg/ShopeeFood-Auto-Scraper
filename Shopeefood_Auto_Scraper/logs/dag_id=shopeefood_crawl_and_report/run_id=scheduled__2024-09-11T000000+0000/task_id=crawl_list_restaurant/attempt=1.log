@@ -1,0 +1,750 @@
+[2024-09-12T06:04:28.558+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T06:04:28.569+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T06:04:28.570+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T06:04:28.589+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-11 00:00:00+00:00
+[2024-09-12T06:04:28.595+0000] {standard_task_runner.py:60} INFO - Started process 241 to run task
+[2024-09-12T06:04:28.599+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'scheduled__2024-09-11T00:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpqo8p_j0u']
+[2024-09-12T06:04:28.602+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask crawl_list_restaurant
+[2024-09-12T06:04:28.663+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [running]> on host f432431e979d
+[2024-09-12T06:04:28.752+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-11T00:00:00+00:00'
+[2024-09-12T06:05:06.527+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:07.304+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:07.529+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:09.514+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:11.655+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:11.727+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:12.204+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:12.389+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:12.587+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:12.774+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:13.047+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:13.244+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:13.474+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:13.876+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:14.243+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:17.094+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:17.169+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:17.238+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:17.503+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:17.588+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:17.789+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:17.997+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:18.061+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:18.998+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:19.549+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:19.686+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:19.795+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy thông tin cửa hàng: Message: no such element: Unable to locate element: {"method":"css selector","selector":".content-promotion"}
+  (Session info: headless chrome=117.0.5938.132); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55f1d63fa6b3 <unknown>
+#1 0x55f1d60d01e7 <unknown>
+#2 0x55f1d6117566 <unknown>
+#3 0x55f1d6117651 <unknown>
+#4 0x55f1d610d046 <unknown>
+#5 0x55f1d61390ed <unknown>
+#6 0x55f1d610cf16 <unknown>
+#7 0x55f1d613928e <unknown>
+#8 0x55f1d6152322 <unknown>
+#9 0x55f1d6138e93 <unknown>
+#10 0x55f1d610b934 <unknown>
+#11 0x55f1d610c71e <unknown>
+#12 0x55f1d63bfcb8 <unknown>
+#13 0x55f1d63c3bf0 <unknown>
+#14 0x55f1d63ce19c <unknown>
+#15 0x55f1d63c4808 <unknown>
+#16 0x55f1d639127f <unknown>
+#17 0x55f1d63e8e88 <unknown>
+#18 0x55f1d63e9059 <unknown>
+#19 0x55f1d63f9843 <unknown>
+#20 0x7fa2badd0609 start_thread
+[2024-09-12T06:05:20.432+0000] {python.py:202} INFO - Done. Returned value was: [['Bếp Việt - Cơm Văn Phòng - Đông Thiên', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-viet-com-van-phong-dong-thien'], ['Trà Sữa Tocotoco - Nguyễn Hoàng', 'Đồng giá 29k', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-nguyen-hoang'], ['Bún Thủy - Trần Nhật Duật', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-thuy-tran-nhat-duat'], ['Texas Chicken - Aeon Mall Hà Đông', 'Giảm món', 'https://shopeefood.vn/ha-noi/texas-chicken-aeon-mall-ha-dong'], ['Long Wang Cơ Sở 1 - Dim Sum Hongkong - 84 Ngọc Khánh', 'Giảm món', 'https://shopeefood.vn/ha-noi/long-wang-co-so-1-dim-sum-hongkong-84-ngoc-khanh'], ['Trà Sữa HAPPY - KĐT Đô Nghĩa', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/tra-sua-happy-kdt-do-nghia'], ['Tiệm Gà Rán Óng Ánh - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-ong-anh-chua-lang'], ['Trà Sữa Seko Tea - Mễ Trì Thượng', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/seko-tea-tra-sua-dai-loan'], ['Royal Tea - Trà Sữa Trân Châu - Hồ Tùng Mậu', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/royal-tea-tra-sua-tran-chau-ho-tung-mau'], ['Trà sữa LeeTee - Kem Trứng & Trà Hoa Quả - Láng Hạ', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/tra-sua-leetee-kem-trung-tra-hoa-qua-lang-ha'], ['Trà Sữa Tocotoco - Thiên Đường Bảo Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-thien-duong-bao-son'], ['Bánh Mì Bắp - Gà Popcorn & Bánh Mì Gà Nem - Trần Quang Diệu', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/banh-mi-bap-ga-popcorn-banh-mi-ga-nem-tran-quang-dieu'], ['Master Tea 美茶 - Bồ Đề', 'Giảm món', 'https://shopeefood.vn/ha-noi/master-tea-%E7%BE%8E%E8%8C%B6-bo-de'], ['Trà Sữa Royaltea - Lê Lai', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/tra-sua-royaltea-le-lai'], ['Bếp Mẹ Thỏ - Bún, Miến & Phở Trộn Online', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-me-tho-bun-mien-pho-tron-online'], ['Kem Dairy Queen - Royal City', 'Giảm món', 'https://shopeefood.vn/ha-noi/dairy-queen-royal-city'], ["Kem Swensen's - Times City", 'Giảm món', 'https://shopeefood.vn/ha-noi/kem-swensen-s-times-city'], ['Trà Chanh Dương Dương - Mì Cay, Tokbokki - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-chanh-duong-duong-mi-cay-tokbokki-shop-online'], ['Gà Rán Five Star - 04 Yên Hòa', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-five-star-04-yen-hoa'], ['Bánh Mì Minh Nhật - Duy Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-minh-nhat-duy-tan'], ['Mỳ Cay Ngõ - Đồng Me', 'Giảm món', 'https://shopeefood.vn/ha-noi/my-cay-ngo-dong-me'], ['The Pizza Company - The Manor', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-pizza-company-the-manor'], ['YH.TANG - Đệ Nhất Trà Sữa Nướng - Trần Phú', 'Giảm hết 5%', 'https://shopeefood.vn/ha-noi/yh-tang-de-nhat-tra-sua-nuong-tran-phu'], ['Bonchon Chicken - Lạc Long Quân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bonchon-chicken-lac-long-quan'], ['Minh Hoàng Bakery - Bông Lan Trứng Muối & Đồ Uống Online - Trần Thái Tông', 'Giảm hết 5%', 'https://shopeefood.vn/ha-noi/minh-hoang-bakery-bong-lan-trung-muoi-do-uong-online-tran-thai-tong'], ['Bếp Mẹ Su - Phở Tíu - Shop Online - Lạc Long Quân', 'Giảm hết 22%', 'https://shopeefood.vn/ha-noi/bep-me-su-pho-tiu-shop-online-lac-long-quan'], ['Vịt 29 - Vịt Quay Bắc Kinh - Bạch Mai', 'Giảm món', 'https://shopeefood.vn/ha-noi/vit-29-vit-quay-bac-kinh-bach-mai'], ['Sữa Chua Trân Châu Hạ Long - Quốc Lộ 32', 'Giảm món', 'https://shopeefood.vn/ha-noi/sua-chua-tran-chau-ha-long-quoc-lo-32'], ["Trà Sữa Taster's Choice - Hà Đông", 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-taster-s-choice-ha-dong'], ['Highlands Coffee - Trà, Cà Phê & Bánh - Eco Lake View', 'Giảm món', 'https://shopeefood.vn/ha-noi/highlands-coffee-tra-ca-phe-banh-eco-lake-view'], ['Odi Bakery - Trà & Bánh Ngọt - Phan Văn Trường', 'Flash Sale', 'https://shopeefood.vn/ha-noi/odi-bakery-tra-banh-ngot-phan-van-truong'], ['The Alley - Trà Sữa Đài Loan - 48 Trần Phú', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-alley-tra-sua-dai-loan-tran-phu'], ['Trà Sữa Tocotoco - 271 Nguyễn Khang', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-271-nguyen-khang'], ['Pozaa Tea - Trà Sữa Đài Loan - Trần Phú', 'Giảm hết 25%', 'https://shopeefood.vn/ha-noi/pozaa-tea-tra-sua-dai-loan-tran-phu'], ['Trà Sữa Tocotoco - Phú Diễn', 'Giảm hết 30%', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-phu-dien'], ['Nọng FOOD - Mì Trộn Indomie & Trà Chanh - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/noong-food-my-tron-indomie-tra-chanh-kim-giang'], ['PiPo Quán - Bánh Tráng Cuốn Thịt Heo', 'Giảm món', 'https://shopeefood.vn/ha-noi/pipo-quan-banh-trang-cuon-thit-heo'], ['Gà Rán KFC - Hồ Gươm Plaza', 'Giảm món', 'https://shopeefood.vn/ha-noi/kfc-ho-guom-plaza'], ['Bánh Tráng Trộn 98 - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-trang-tron-98-chua-lang'], ['SiA Lab - Phê cùng Trà', 'Flash Sale', 'https://shopeefood.vn/ha-noi/sia-lab-phe-cung-tra'], ['TOUS les JOURS - Lý Thường Kiệt', 'Giảm món', 'https://shopeefood.vn/ha-noi/tous-les-jours-ly-thuong-kiet'], ['Ốc Hương Trang® - 139B Lê Hồng Phong', 'Giảm món', 'https://shopeefood.vn/ha-noi/oc-huong-trang-139b-le-hong-phong'], ['Guu Chicken - Cơm Gà & Gà Rán - Hoàng Hoa Thám', 'Giảm món', 'https://shopeefood.vn/ha-noi/guu-chicken-com-ga-ga-ran-hoang-hoa-tham'], ['Quang Tèo Food - Mì Trộn Indomie - Chợ Khâm Thiên', 'Giảm món', 'https://shopeefood.vn/ha-noi/quang-teo-food-mi-tron-indomie-cho-kham-thien'], ['Gugsumi - Bún Trộn Healthy - Khương Trung', 'Giảm món', 'https://shopeefood.vn/ha-noi/gugsumi-bun-tron-healthy-khuong-trung'], ['Cháo, Bánh Gối, Óc Hầm & Đồ Ăn Vặt - Trần Thái Tông', 'Giảm món', 'https://shopeefood.vn/ha-noi/chao-banh-goi-oc-ham-do-an-vat-tran-thai-tong'], ['Xôi Yến - Bách Khoa', 'Giảm món', 'https://shopeefood.vn/ha-noi/xoi-yen-bach-khoa'], ['Quán Ăn Hợp Tác Xã & Cơm Niêu - Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/quan-an-hop-tac-xa-com-nieu-tay-son'], ['Pepperonis Pizza - Lê Duẩn', 'Giảm món', 'https://shopeefood.vn/ha-noi/pepperonis-pizza-le-duan'], ['Mỏ Khoét Quán - Cơm Gà Sốt Cay Hàn Quốc - Trần Cung', 'Giảm món', 'https://shopeefood.vn/ha-noi/mo-khoet-quan-com-ga-sot-cay-han-quoc-tran-cung'], ['Dakgalbi - Tiệm Gà Rán Hàn Quốc - 29 Ngõ Tự Do', 'Giảm món', 'https://shopeefood.vn/ha-noi/dakgalbi-tiem-ga-ran-han-quoc-29-ngo-tu-do'], ['Cơm Thố Bách Khoa - Khâm Thiên', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tho-bach-khoa-kham-thien'], ['Cơm Tấm Anh Ba Sài Gòn', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tam-anh-ba-sai-gon'], ['Cơm Tấm 3 Ông Tướng - Minh Khai', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tam-ba-ong-tuong'], ['Cơm Gà Hải Thuỷ - Bún Đậu Mắm Tôm & Bún Chả', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-ga-hai-thuy-bun-dau-mam-tom-bun-cha'], ['Bún Đậu Mai Dung', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-dau-mai-dung'], ['Bin Bon - Mì Trộn Indomie - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/bin-bon-mi-tron-indomie-kim-giang'], ["Al Fresco's - Pizza, Mỳ Ý, Sườn, Steak Bò Bít Tết - Hai Bà Trưng", 'Giảm món', 'https://shopeefood.vn/ha-noi/al-fresco-s-hai-ba-trung'], ['Anh Béo - Bún Miến Ngan - Trần Quốc Vượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/anh-beo-bun-mien-ngan-tran-quoc-vuong'], ['Cơm Phố - Cơm Gà & Cơm Bò - Dương Khuê', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-pho-com-ga-com-bo-duong-khue'], ['Cơm Cô Ba - Cơm Văn Phòng', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-co-ba-com-van-phong'], ['Bún Đậu Mẹt Minh Thư - Văn Minh', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-dau-met-minh-thu-van-minh'], ['Minh Phương - Nem Nướng Nha Trang', 'Giảm món', 'https://shopeefood.vn/ha-noi/minh-phuong-nem-nuong-nha-trang'], ['Mì Trộn Indomie Gấu Bé - 5b 92/31 Nguyễn Khánh Toàn', 'Giảm món', 'https://shopeefood.vn/ha-noi/mi-tron-indomie-gau-be-5b-92-31-nguyen-khanh-toan'], ['Phở Xào Duyên Béo', 'Giảm món', 'https://shopeefood.vn/ha-noi/pho-xao-duyen-beo'], ['Quang Thắng - Cơm Ngon Văn Phòng', 'Giảm món', 'https://shopeefood.vn/ha-noi/quang-thang-com-ngon-van-phong'], ['LQS - Chuyên Bún Bò Huế & Cơm Rang Giòn - Trường Chinh', 'Giảm món', 'https://shopeefood.vn/ha-noi/lqs-chuyen-bun-bo-hue-com-rang-gion-online'], ['Cô Ba - Nem Nướng Nha Trang - Minh Khai', 'Giảm món', 'https://shopeefood.vn/ha-noi/co-ba-nem-nuong-nha-trang-minh-khai'], ['Pizza Ông Tây - Đỗ Quang', 'Giảm món', 'https://shopeefood.vn/ha-noi/pizza-ong-tay-do-quang'], ['Cơm Rang Hòa - Tô Hiệu', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-rang-hoa'], ['Hà Béo - Ăn Vặt Các Loại', 'Giảm món', 'https://shopeefood.vn/ha-noi/ha-beo-an-vat-cac-loai'], ['Tim Food - Mì Trộn Indomie & Đồ Ăn Vặt - Hồng Hà', 'Giảm món', 'https://shopeefood.vn/ha-noi/tim-food-mi-tron-indomie-do-an-vat-hong-ha'], ['Như Mây - Bánh Đa Trộn', 'Giảm món', 'https://shopeefood.vn/ha-noi/nhu-may-banh-da-tron'], ['Nem Nướng Nha Trang Ngọc Hằng - Phú Diễn', 'Giảm món', 'https://shopeefood.vn/ha-noi/nem-nuong-nha-trang-ngoc-hang-phu-dien'], ['Bảo Bảo - Mì Trộn Indomie - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/bao-bao-mi-tron-indomie-shop-online'], ['iChi Food - Cháo, Súp & Mỳ Xào - 169 Tôn Đức Thắng', 'Giảm món', 'https://shopeefood.vn/ha-noi/ichi-food-chao-sup-my-xao-169-ton-duc-thang'], ['A Lẩu - Cháo Lòng', 'Giảm món', 'https://shopeefood.vn/ha-noi/a-lau-chao-long'], ['Bảo Ngọc Food - Mì Trộn Indomie & Đồ Ăn Vặt - Phố Lụa', 'Giảm món', 'https://shopeefood.vn/ha-noi/bao-ngoc-food-mi-tron-indomie-do-an-vat-pho-lua'], ['Gà Luộc, Gà Ủ Muối & Cơm Cháy - Duyên Dương', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-luoc-ga-u-muoi-com-chay-duyen-duong'], ['Bún Đậu Mẹt Thủy Mít - C8 Thành Công', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-dau-met-thuy-mit-c8-thanh-cong'], ['Bom Bốp - Bún Đậu Mơ', 'Giảm món', 'https://shopeefood.vn/ha-noi/bom-bop-bun-dau-mo'], ['Tiệm Mì Tươi Ramen2go', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-mi-tuoi-ramen2go'], ['Hoàng Huệ - Cơm Rang & Bún Bò Trộn - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/hoang-hue-com-rang-bun-bo-tron-chua-lang'], ['Gà Tươi Mạnh Hoạch - Xuân La', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-tuoi-manh-hoach-xuan-la'], ['Sushi Garden', 'Giảm món', 'https://shopeefood.vn/ha-noi/sushi-garden'], ['Đức Food - Mì Trộn Indomie - Ngõ 95 Chùa Bộc', 'Giảm món', 'https://shopeefood.vn/ha-noi/duc-food-mi-tron-indomie-ngo-95-chua-boc'], ['Đức Food - Mì Trộn Indomie Online - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/duc-food-mi-tron-indomie-online-kim-giang'], ['Dương Dương - Lẩu Tokbokki, Mỳ Cay, Trà Chanh & Trà Tắc Online - Đồng Me', 'Flash Sale', 'https://shopeefood.vn/ha-noi/duong-duong-lau-tokbokki-my-cay-tra-chanh-tra-tac-online-dong-me'], ['Duy Food - Mì Trộn Indomie', 'Giảm món', 'https://shopeefood.vn/ha-noi/duy-food-mi-tron-indomie'], ['Trà Sữa Bobapop - Đại Cồ Việt', 'Giảm hết 20%', 'https://shopeefood.vn/ha-noi/tra-sua-bobapop-dao-tan'], ['GÀ RÁN & BURGER GONGFU CHICKEN - 521 Nguyễn Trãi', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-burger-gongfu-chicken-521-nguyen-trai'], ['Trà Sữa Gong Cha - 貢茶 - Hoàng Đạo Thúy', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-gong-cha-hoang-dao-thuy'], ['Bánh Mì Tuhu Bread - Phố Nguyễn Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-tuhu-bread-pho-nguyen-son'], ['Yên Đàm - Trà Sữa Thảo Dược', 'Giảm món', 'https://shopeefood.vn/ha-noi/yen-dam-tra-sua-thao-duoc'], ['Gà Rán Việt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-ran-viet'], ['Vinamilk - Giấc Mơ Sữa Việt - Định Công Thượng - AC10091', 'Giảm món', 'https://shopeefood.vn/ha-noi/vinamilk-giac-mo-sua-viet-dinh-cong-thuong-ac10091'], ['Trà Sữa ToCoToCo - 317 Trần Cung', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-317-tran-cung'], ['Trà Sữa Tocotoco - Cầu Giấy', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-262-cau-giay'], ["Domino's Pizza - Xuân La", 'Giảm món', 'https://shopeefood.vn/ha-noi/domino-s-pizza-xuan-la'], ['Trà Sữa Miutea - Học Viện Nông Nghiệp', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-miutea-hoc-vien-nong-nghiep'], ['Tocotoco - Goldsilk Complex', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tocotoco-goldsilk-complex'], ['Hủ Tiếu Thái Lan, Trà Sữa Thái, Ăn Vặt - Pi Thai - 136 Vũ Phạm Hàm', 'Giảm món', 'https://shopeefood.vn/ha-noi/hu-tieu-thai-lan-tra-sua-thai-an-vat-pi-thai-136-vu-pham-ham'], ['Sói Biển - Thực phẩm sạch - Số 8 Vũ Thạnh', 'Giảm món', 'https://shopeefood.vn/ha-noi/soi-bien-thuc-pham-sach-so-8-vu-thanh'], ['The Coffee House - Lê Thanh Nghị', 'Flash Sale', 'https://shopeefood.vn/ha-noi/the-coffee-house-le-thanh-nghi'], ["Fam's Chicken - The Manor", 'Giảm món', 'https://shopeefood.vn/ha-noi/fam-s-chicken-the-manor'], ['Trà Sữa Sharetea Nhà Thờ - Phố Nguyễn Thị Định', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-sharetea-nha-tho-pho-nguyen-thi-dinh'], ['Highlands Coffee - Trà, Cà Phê & Bánh - Imperia Garden', 'Giảm món', 'https://shopeefood.vn/ha-noi/highlands-coffee-tra-ca-phe-banh-imperia-garden'], ['Cơm Thố Anh Nguyễn - Bán Đảo Linh Đàm', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tho-anh-nguyen-ban-dao-linh-dam'], ['Cơm Tấm Delichi - Cơm Tấm Sườn Bì Chả - Phùng Khoang', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tam-delichi-com-tam-suon-bi-cha-phung-khoang'], ['Burger King - Giảng Võ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/burger-king-giang-vo'], ['DLC Chicken - Gà Rán Giòn Tan - Quan Nhân', 'Giảm món', 'https://shopeefood.vn/ha-noi/dlc-chicken-ga-ran-gion-tan-quan-nhan'], ['Cơm Thố Delichi - Cơm Thố Gà, Xá Xíu - Nghĩa Tân', 'Giảm hết 20%', 'https://shopeefood.vn/ha-noi/com-tho-delichi-com-tho-ga-xa-xiu-nghia-tan'], ['Bami King - Bánh Mì Bò Nướng & Cơm Thố - An Trạch', 'Giảm món', 'https://shopeefood.vn/ha-noi/bami-king-banh-mi-bo-nuong-com-tho-an-trach'], ['Bami Sot - Bánh Mì Đen - Lò Đúc', 'Giảm món', 'https://shopeefood.vn/ha-noi/bami-sot-banh-mi-den-lo-duc'], ['Bento Delichi - Cơm Gà Xối Mỡ, Cơm Gà Mắm Tỏi - Dương Khuê', 'Giảm món', 'https://shopeefood.vn/ha-noi/bento-delichi-com-ga-xoi-mo-com-ga-mam-toi-duong-khue'], ["Papa's Kitchen - Đồ Ăn Hàn Quốc & Tokbokki, Cơm Trộn - Hồng Mai", 'Flash Sale', 'https://shopeefood.vn/ha-noi/papa-s-kitchen-do-an-han-quoc-tokbokki-com-tron-hong-mai'], ['San Tokbokki - Ẩm Thực Hàn Quốc - Trần Quốc Hoàn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/san-tokbokki-am-thuc-han-quoc-tran-quoc-hoan'], ['Bánh Mì Hội An - Đồ Ăn Vặt - Phố Tân Mai', 'Flash Sale', 'https://shopeefood.vn/ha-noi/banh-mi-hoi-an-do-an-vat-pho-tan-mai'], ['Namsan Chicken - Triệu Việt Vương', 'Flash Sale', 'https://shopeefood.vn/ha-noi/namsan-chicken-trieu-viet-vuong'], ['Hân - Tokbokki, Gà Sốt Cay Hàn Quốc & Ăn Vặt - Hồ Tùng Mậu', 'Flash Sale', 'https://shopeefood.vn/ha-noi/han-tokbokki-ga-sot-cay-han-quoc-an-vat-ho-tung-mau'], ['Tin Tin - Chim Cút Quay Móc Mật & Đồ Ăn Vặt', 'Giảm món', 'https://shopeefood.vn/ha-noi/tin-tin-chim-cut-quay-moc-mat-do-an-vat'], ['Tiệm Bé Cá – Trà Sữa, Mỳ Ý & Sandwich', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-be-ca-tra-sua-my-y-sandwich'], ['Việt Nguyễn Coffee - Mai Anh Tuấn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/viet-nguyen-coffee-mai-anh-tuan'], ['December Tea - Trà Hoa Quả Nhiệt Đới & Mì Trộn Indomie - Định Công', 'Flash Sale', 'https://shopeefood.vn/ha-noi/december-tea-tra-hoa-qua-nhiet-doi-mi-tron-indomie-dinh-cong'], ['Quỳnh Anh - Gỏi Cuốn Và Ăn Vặt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/quynh-anh-goi-cuon-va-an-vat'], ['Mr.Eco Cơm Gạo Lứt - Healthy Food - Cầu Giấy', 'Giảm món', 'https://shopeefood.vn/ha-noi/mr-eco-com-gao-lut-healthy-food-cau-giay'], ['A-Phú - Mì Trộn Indomie & Ăn Vặt - Nguyễn Đức Cảnh', 'Giảm món', 'https://shopeefood.vn/ha-noi/a-phu-mi-tron-indomie-an-vat-nguyen-duc-canh'], ["TrueCoffee Pick'N Go - Lạc Long Quân", 'Flash Sale', 'https://shopeefood.vn/ha-noi/truecoffee-pick-n-go-lac-long-quan'], ['MinCha - Gà Ủ Muối, Mì Trộn Indomie & Đồ Ăn Vặt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/mincha-ga-u-muoi-mi-tron-indomie-do-an-vat'], ['LATU Quán - Nem Nướng Nha Trang - Yên Phúc', 'Giảm món', 'https://shopeefood.vn/ha-noi/latu-quan-nem-nuong-nha-trang-yen-phuc'], ['Cơm Sốt hiMC - Cơm Sườn Tê Cay & Cơm Gà - Nguyễn Văn Trỗi', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-sot-himc-com-suon-te-cay-com-ga-nguyen-van-troi'], ['Nước Ép Trái Cây - Chin’s Fruit Tô Hiệu', 'Flash Sale', 'https://shopeefood.vn/ha-noi/nuoc-ep-trai-cay-chin-s-fruit-to-hieu'], ['Cô Tám - Cơm Rang & Cơm Tấm - 126 Hồng Mai', 'Giảm món', 'https://shopeefood.vn/ha-noi/co-tam-com-rang-an-vat-126-hong-mai'], ['BUMTRO - Bún Trộn Nam Bộ - Ngọc Lâm', 'Giảm món', 'https://shopeefood.vn/ha-noi/bumtro-bun-tron-nam-bo-ngoc-lam'], ['Mập Quán - Đồ Ăn Vặt & Mỳ Xào - Nguyên Hồng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/map-quan-do-an-vat-my-xao-nguyen-hong'], ['Tiệm Gà Ủ Muối - Gà Luộc & Gà Ủ Muối - Nguyễn Viết Xuân', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-u-muoi-ga-luoc-ga-u-muoi-nguyen-viet-xuan'], ['Tiger Sugar - Vũ Trọng Phụng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiger-sugar-vu-trong-phung'], ['Phúc Nguyễn - Trái Cây Tươi & Nước Ép Trái Cây Tươi - Trần Quốc Vượng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/phuc-nguyen-trai-cay-tuoi-nuoc-ep-trai-cay-tuoi-tran-quoc-vuong'], ['Bao Bao - Cơm Xá Xíu, Mỳ Chua Cay & Cháo Ếch - 213 Xã Đàn', 'Giảm món', 'https://shopeefood.vn/ha-noi/bao-bao-com-xa-xiu-my-chua-cay-chao-ech-213-xa-dan'], ['Tanka Quán - Chân Gà Nướng & Cánh Gà Nướng - Đê La Thành', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tanka-quan-chan-ga-nuong-canh-ga-nuong-de-la-thanh'], ['Mr.Eco Salad Healthy - Food & Drinks - Đặng Tất', 'Flash Sale', 'https://shopeefood.vn/ha-noi/mr-eco-salad-healthy-food-drinks-dang-tat'], ['Nem Nướng Nha Trang Minh Đức - Nghĩa Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/nem-nuong-nha-trang-minh-duc-nghia-tan'], ['Gà Luộc & Gà Ủ Muối - Hẻm 65 Định Công Hạ', 'Giảm hết 25%', 'https://shopeefood.vn/ha-noi/ga-luoc-ga-u-muoi-hem-65-dinh-cong-ha'], ['Trà Sữa - Mỳ Cay & Đồ Ăn Vặt Huyền Linh - 47 Dương Quảng Hàm', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-my-cay-do-an-vat-huyen-linh-47-duong-quang-ham'], ['Maru Korean - Tiệm Đồ Ăn Hàn Quốc & Trà Sữa - Lê Đại Hành', 'Giảm hết 5%', 'https://shopeefood.vn/ha-noi/maru-korean-tiem-do-an-han-quoc-tra-sua-le-dai-hanh'], ['Tiệm Mì Indo - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-mi-indo-kim-giang'], ['An Nam Cháo', 'Flash Sale', 'https://shopeefood.vn/ha-noi/an-nam-chao'], ['Bếp Cô Tấm - Cháo Ngon & Ăn Vặt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bep-co-tam-chao-ngon-an-vat'], ['Tiệm Cơm ChisnBa - Cơm Rang Zòn - Trần Vỹ', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/tiem-com-chisnba-com-rang-zon-tran-vy'], ['Ốc 29 - Ốc Hải Sản & Đồ Ăn Vặt - 38 Yên Lãng', 'Giảm món', 'https://shopeefood.vn/ha-noi/oc-29-oc-hai-san-do-an-vat-38-yen-lang'], ['Giang Cún - Bún Thái Hải Sản - Định Công Thượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/giang-cun-bun-thai-hai-san-dinh-cong-thuong'], ['Dì Cẩm - Bún Thịt Nướng Hội An - Láng Hạ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/di-cam-bun-thit-nuong-hoi-an-lang-ha'], ['Cơm Tấm Sườn 1975 - Láng Hạ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/com-tam-suon-1975-lang-ha'], ['Habifood - Bánh Bao Handmade, Sữa Hạt & Ăn Vặt - 101 C9 Hoàng Ngọc Phách', 'Giảm món', 'https://shopeefood.vn/ha-noi/habifood-banh-bao-handmade-sua-hat-an-vat-101-c9-hoang-ngoc-phach'], ['Tiệm Trà Chè Sky - Mì Trộn Indomie, Trà Mãng Cầu, Trà Chanh - Thượng Đình', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-tra-che-sky-mi-tron-indomie-tra-mang-cau-tra-chanh-thuong-dinh'], ['Quán Quen - Mỳ Chua Cay - 167 Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/quan-quen-my-chua-cay-167-tay-son'], ['Gà Rán & Gà Ủ Muối Hoa Tiêu - Hoàng Ngân', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-ga-u-muoi-hoa-tieu-hoang-ngan'], ['Gà Luộc & Gà Ủ Muối Hoa Tiêu & Gà Rán - Thanh Nhàn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-luoc-ga-u-muoi-hoa-tieu-ga-ran-thanh-nhan'], ['Seoul - Gà Rán Hàn Quốc - Linh Đàm', 'Giảm món', 'https://shopeefood.vn/ha-noi/seoul-ga-ran-han-quoc-linh-dam'], ['Le Pain Lee - Burger, Gà Rán & Cơm Gà - Nguyễn Xiển', 'Freeship Xtra', 'https://shopeefood.vn/ha-noi/le-pain-lee-burger-ga-ran-com-ga-nguyen-xien'], ['Bún Bò Huế Nam Minh - Nghĩa Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-bo-hue-nam-minh-nghia-tan'], ['Cháo Sườn Sụn Phố Cổ', 'Giảm món', 'https://shopeefood.vn/ha-noi/chao-suon-sun-pho-co'], ['Quang Food - Mì Trộn Indomie - Ngõ Chợ Khâm Thiên', 'Giảm món', 'https://shopeefood.vn/ha-noi/quang-food-mi-tron-indomie-ngo-cho-kham-thien'], ['Cơm Rang Gà Sốt 30K - Mỹ Đình', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-rang-ga-sot-30k-my-dinh'], ['Quán 65 - Cơm Văn Phòng - Nguyễn Trãi', 'Giảm món', 'https://shopeefood.vn/ha-noi/quan-65-com-van-phong-nguyen-trai'], ['Mỳ Ếch Chua Cay Trần Quỳnh - 30 Nguyễn Thái Học', 'Flash Sale', 'https://shopeefood.vn/ha-noi/my-ech-chua-cay-tran-quynh-30-nguyen-thai-hoc'], ['Ăn Vặt Hàn Quốc - Gà Rán - Linh Đàm', 'Giảm món', 'https://shopeefood.vn/ha-noi/an-vat-han-quoc-ga-ran-linh-dam'], ['Cơm 3 Miền - Cơm Văn Phòng - Nguyễn Khang', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-3-mien-com-van-phong-nguyen-khang'], ['Zen Zen - Cơm Gà, Gà Rán & Cơm Bò - Trần Duy Hưng', 'Giảm món', 'https://shopeefood.vn/ha-noi/zen-zen-com-ga-ga-ran-com-bo-tran-duy-hung'], ['Tossful - Salad Bar - Capital Place', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tossful-salad-bar-capital-place'], ["Let's Pizza - Pizza & Mì Ý - Lương Khánh Thiện", 'Giảm món', 'https://shopeefood.vn/ha-noi/let-s-pizza-pizza-mi-y-luong-khanh-thien'], ['Korea House - Đồ Ăn Hàn Quốc Và Cơm Trộn - Ngõ Chùa Liên Phái', 'Giảm giá 20%', 'https://shopeefood.vn/ha-noi/korea-house-do-an-han-quoc-va-com-tron-ngo-chua-lien-phai'], ['Hương Vị Việt - Gà Rán & Gà Ủ Muối - Bùi Xương Trạch', 'Giảm món', 'https://shopeefood.vn/ha-noi/huong-vi-viet-ga-ran-ga-u-muoi-bui-xuong-trach'], ['King Cup - Cơm Thố Nhật - Liên Mạc', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/king-cup-com-tho-nhat-lien-mac'], ['Mì Trộn Indomie 158 - Bùi Ngọc Dương', 'Giảm món', 'https://shopeefood.vn/ha-noi/mi-tron-indomie-158-bui-ngoc-duong'], ['Tâm Anh - Nem Nướng Nha Trang - Ngõ Chùa Đối Diện 228 Mễ Trì Thượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tam-anh-nem-nuong-nha-trang-ngo-chua-doi-dien-228-me-tri-thuong'], ['Bún Chả Ngon - Nguyễn Khắc Cần', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-cha-ngon-nguyen-khac-can'], ['Cơm Gà Sốt Cay, Cơm Trộn Cá Ngừ & Đồ Ăn Hàn - Moon 76', 'Flash Sale', 'https://shopeefood.vn/ha-noi/com-ga-sot-cay-com-tron-ca-ngu-do-an-han-moon-76'], ['Bếp Nhà Châu - Eatclean & Healthy', 'Giảm món', 'https://shopeefood.vn/ha-noi/bep-nha-chau-eatclean-healthy'], ['Ngọc - Cháo Lòng Ngon & Bún Đậu Mẹt', 'Giảm hết 20%', 'https://shopeefood.vn/ha-noi/ngoc-chao-long-ngon-bun-dau-met'], ['Cơm Văn Phòng & Cơm Niêu Hợp Tác Xã - Nguyễn Đổng Chi', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-van-phong-com-nieu-hop-tac-xa-nguyen-dong-chi'], ['Mokchang - Đồ Ăn Hàn Quốc - Láng Hạ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/mokchang-do-an-han-quoc-lang-ha'], ['Snap Food - Cơm, Bún & Bánh Mì Healthy - Tôn Đức Thắng', 'Giảm món', 'https://shopeefood.vn/ha-noi/snap-food-com-bun-banh-mi-healthy-ton-duc-thang']]
+[2024-09-12T06:05:20.479+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240911T000000, start_date=20240912T060428, end_date=20240912T060520
+[2024-09-12T06:05:20.530+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T06:05:20.573+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-12T08:02:02.135+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T08:02:02.147+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T08:02:02.148+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T08:02:02.161+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-11 00:00:00+00:00
+[2024-09-12T08:02:02.166+0000] {standard_task_runner.py:60} INFO - Started process 356 to run task
+[2024-09-12T08:02:02.171+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'scheduled__2024-09-11T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp4gkl7xok']
+[2024-09-12T08:02:02.174+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask crawl_list_restaurant
+[2024-09-12T08:02:02.225+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [running]> on host b944a8bf813f
+[2024-09-12T08:02:02.301+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-11T00:00:00+00:00'
+[2024-09-12T08:02:58.155+0000] {python.py:202} INFO - Done. Returned value was: [['Bếp Việt - Cơm Văn Phòng - Đông Thiên', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-viet-com-van-phong-dong-thien'], ['Trà Sữa Tocotoco - Nguyễn Hoàng', 'Đồng giá 29k', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-nguyen-hoang'], ['Bún Thủy - Trần Nhật Duật', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-thuy-tran-nhat-duat'], ['Texas Chicken - Aeon Mall Hà Đông', 'Giảm món', 'https://shopeefood.vn/ha-noi/texas-chicken-aeon-mall-ha-dong'], ['Long Wang Cơ Sở 1 - Dim Sum Hongkong - 84 Ngọc Khánh', 'Giảm món', 'https://shopeefood.vn/ha-noi/long-wang-co-so-1-dim-sum-hongkong-84-ngoc-khanh'], ['Korea House - Đồ Ăn Hàn Quốc Và Cơm Trộn - Ngõ Chùa Liên Phái', 'Giảm giá 20%', 'https://shopeefood.vn/ha-noi/korea-house-do-an-han-quoc-va-com-tron-ngo-chua-lien-phai'], ['Tiệm Gà Rán Óng Ánh - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-ong-anh-chua-lang'], ['Trà Sữa Seko Tea - Mễ Trì Thượng', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/seko-tea-tra-sua-dai-loan'], ['Royal Tea - Trà Sữa Trân Châu - Hồ Tùng Mậu', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/royal-tea-tra-sua-tran-chau-ho-tung-mau'], ['Trà sữa LeeTee - Kem Trứng & Trà Hoa Quả - Láng Hạ', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/tra-sua-leetee-kem-trung-tra-hoa-qua-lang-ha'], ['Trà Sữa Tocotoco - Thiên Đường Bảo Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-thien-duong-bao-son'], ['Ngọc - Cháo Lòng Ngon & Bún Đậu Mẹt', 'Giảm hết 20%', 'https://shopeefood.vn/ha-noi/ngoc-chao-long-ngon-bun-dau-met'], ['Bánh Mì Bắp - Gà Popcorn & Bánh Mì Gà Nem - Trần Quang Diệu', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/banh-mi-bap-ga-popcorn-banh-mi-ga-nem-tran-quang-dieu'], ['Master Tea 美茶 - Bồ Đề', 'Giảm món', 'https://shopeefood.vn/ha-noi/master-tea-%E7%BE%8E%E8%8C%B6-bo-de'], ['Trà Sữa Royaltea - Lê Lai', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/tra-sua-royaltea-le-lai'], ['Bếp Mẹ Thỏ - Bún, Miến & Phở Trộn Online', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-me-tho-bun-mien-pho-tron-online'], ['Kem Dairy Queen - Royal City', 'Giảm món', 'https://shopeefood.vn/ha-noi/dairy-queen-royal-city'], ["Kem Swensen's - Times City", 'Giảm món', 'https://shopeefood.vn/ha-noi/kem-swensen-s-times-city'], ['Tiệm Cơm ChisnBa - Cơm Rang Zòn - Trần Vỹ', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/tiem-com-chisnba-com-rang-zon-tran-vy'], ['Trà Chanh Dương Dương - Mì Cay, Tokbokki - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-chanh-duong-duong-mi-cay-tokbokki-shop-online'], ['Gà Rán Five Star - 04 Yên Hòa', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-five-star-04-yen-hoa'], ['Bánh Mì Minh Nhật - Duy Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-minh-nhat-duy-tan'], ['The Pizza Company - The Manor', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-pizza-company-the-manor'], ['Tâm Anh - Nem Nướng Nha Trang - Ngõ Chùa Đối Diện 228 Mễ Trì Thượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tam-anh-nem-nuong-nha-trang-ngo-chua-doi-dien-228-me-tri-thuong'], ['Mokchang - Đồ Ăn Hàn Quốc - Láng Hạ', 'Giảm món', 'https://shopeefood.vn/ha-noi/mokchang-do-an-han-quoc-lang-ha'], ['Tiệm Gà Rán Số 19 - Hào Nam', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-so-19-hao-nam'], ['Bonchon Chicken - Lạc Long Quân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bonchon-chicken-lac-long-quan'], ['Bếp Mẹ Su - Phở Tíu - Shop Online - Lạc Long Quân', 'Giảm hết 22%', 'https://shopeefood.vn/ha-noi/bep-me-su-pho-tiu-shop-online-lac-long-quan'], ['Vịt 29 - Vịt Quay Bắc Kinh - Bạch Mai', 'Giảm món', 'https://shopeefood.vn/ha-noi/vit-29-vit-quay-bac-kinh-bach-mai'], ['Sữa Chua Trân Châu Hạ Long - Quốc Lộ 32', 'Giảm món', 'https://shopeefood.vn/ha-noi/sua-chua-tran-chau-ha-long-quoc-lo-32'], ['Mỳ Ếch Chua Cay Trần Quỳnh - 30 Nguyễn Thái Học', 'Giảm món', 'https://shopeefood.vn/ha-noi/my-ech-chua-cay-tran-quynh-30-nguyen-thai-hoc'], ['Highlands Coffee - Trà, Cà Phê & Bánh - Eco Lake View', 'Giảm món', 'https://shopeefood.vn/ha-noi/highlands-coffee-tra-ca-phe-banh-eco-lake-view'], ['The Alley - Trà Sữa Đài Loan - 48 Trần Phú', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-alley-tra-sua-dai-loan-tran-phu'], ['Trà Sữa Tocotoco - Phú Diễn', 'Giảm hết 30%', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-phu-dien'], ['Nọng FOOD - Mì Trộn Indomie & Trà Chanh - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/noong-food-my-tron-indomie-tra-chanh-kim-giang'], ['Gà Rán KFC - Hồ Gươm Plaza', 'Giảm món', 'https://shopeefood.vn/ha-noi/kfc-ho-guom-plaza'], ['Bánh Tráng Trộn 98 - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-trang-tron-98-chua-lang'], ['Snap Food - Cơm, Bún & Bánh Mì Healthy - Tôn Đức Thắng', 'Giảm món', 'https://shopeefood.vn/ha-noi/snap-food-com-bun-banh-mi-healthy-ton-duc-thang'], ['TOUS les JOURS - Lý Thường Kiệt', 'Giảm món', 'https://shopeefood.vn/ha-noi/tous-les-jours-ly-thuong-kiet'], ['Burger King - Giảng Võ', 'Giảm món', 'https://shopeefood.vn/ha-noi/burger-king-giang-vo'], ['Anh Béo - Bún & Bánh Đa Trộn - Vĩnh Hưng', 'Giảm món', 'https://shopeefood.vn/ha-noi/anh-beo-bun-banh-da-tron-vinh-hung'], ['Ốc Hương Trang® - 139B Lê Hồng Phong', 'Giảm món', 'https://shopeefood.vn/ha-noi/oc-huong-trang-139b-le-hong-phong'], ['Quang Tèo Food - Mì Trộn Indomie - Chợ Khâm Thiên', 'Giảm món', 'https://shopeefood.vn/ha-noi/quang-teo-food-mi-tron-indomie-cho-kham-thien'], ['Gugsumi - Bún Trộn Healthy - Khương Trung', 'Giảm món', 'https://shopeefood.vn/ha-noi/gugsumi-bun-tron-healthy-khuong-trung'], ['Cháo, Bánh Gối, Óc Hầm & Đồ Ăn Vặt - Trần Thái Tông', 'Giảm món', 'https://shopeefood.vn/ha-noi/chao-banh-goi-oc-ham-do-an-vat-tran-thai-tong'], ['Nem Nướng Nha Trang Minh Đức - Nghĩa Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/nem-nuong-nha-trang-minh-duc-nghia-tan'], ['Xôi Yến - Bách Khoa', 'Giảm món', 'https://shopeefood.vn/ha-noi/xoi-yen-bach-khoa'], ['Quán Ăn Hợp Tác Xã & Cơm Niêu - Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/quan-an-hop-tac-xa-com-nieu-tay-son'], ['Pepperonis Pizza - Lê Duẩn', 'Giảm món', 'https://shopeefood.vn/ha-noi/pepperonis-pizza-le-duan'], ['Tiệm Gà Ủ Muối - Gà Luộc & Gà Ủ Muối - Nguyễn Viết Xuân', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-u-muoi-ga-luoc-ga-u-muoi-nguyen-viet-xuan'], ['Hương Vị Việt - Gà Rán & Gà Ủ Muối - Bùi Xương Trạch', 'Giảm món', 'https://shopeefood.vn/ha-noi/huong-vi-viet-ga-ran-ga-u-muoi-bui-xuong-trach'], ['Hadu Y - Gà Rán, Pizza & Trà Sữa', 'Giảm món', 'https://shopeefood.vn/ha-noi/hadu-y-ga-ran-pizza-tra-sua'], ['Gà Rán & Gà Ủ Muối Hoa Tiêu - Hoàng Ngân', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-ga-u-muoi-hoa-tieu-hoang-ngan'], ['Dakgalbi - Tiệm Gà Rán Hàn Quốc - 29 Ngõ Tự Do', 'Giảm món', 'https://shopeefood.vn/ha-noi/dakgalbi-tiem-ga-ran-han-quoc-29-ngo-tu-do'], ['Cơm Thố Bách Khoa - Khâm Thiên', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tho-bach-khoa-kham-thien'], ['Bami Bee - Bánh Mì, Mì Trộn Indomie & Gà Ủ Muối - Đình Thôn', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-bami-bee-dinh-thon'], ["Al Fresco's - Pizza, Mỳ Ý, Sườn, Steak Bò Bít Tết - Hai Bà Trưng", 'Giảm món', 'https://shopeefood.vn/ha-noi/al-fresco-s-hai-ba-trung'], ['Cơm Tấm Delichi - Cơm Tấm Sườn Bì Chả - Phùng Khoang', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tam-delichi-com-tam-suon-bi-cha-phung-khoang'], ['Cơm Cô Ba - Cơm Văn Phòng', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-co-ba-com-van-phong'], ['Bún Đậu Mẹt Minh Thư - Văn Minh', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-dau-met-minh-thu-van-minh'], ['Gà Rán Kpub Chicken', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-kpub-chicken'], ['Minh Phương - Nem Nướng Nha Trang', 'Giảm món', 'https://shopeefood.vn/ha-noi/minh-phuong-nem-nuong-nha-trang'], ['Cúc - Cháo Sườn Sụn - Linh Đàm', 'Giảm món', 'https://shopeefood.vn/ha-noi/cuc-chao-suon-sun-linh-dam'], ['Bún Bò Huế Nam Minh - Nghĩa Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-bo-hue-nam-minh-nghia-tan'], ['Mì Trộn Indomie Gấu Bé - 5b 92/31 Nguyễn Khánh Toàn', 'Giảm món', 'https://shopeefood.vn/ha-noi/mi-tron-indomie-gau-be-5b-92-31-nguyen-khanh-toan'], ['Quán Quen - Mỳ Chua Cay - 167 Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/quan-quen-my-chua-cay-167-tay-son'], ['Cô Ba - Nem Nướng Nha Trang - Minh Khai', 'Giảm món', 'https://shopeefood.vn/ha-noi/co-ba-nem-nuong-nha-trang-minh-khai'], ['Pizza Ông Tây - Đỗ Quang', 'Giảm món', 'https://shopeefood.vn/ha-noi/pizza-ong-tay-do-quang'], ['Hà Béo - Ăn Vặt Các Loại', 'Giảm món', 'https://shopeefood.vn/ha-noi/ha-beo-an-vat-cac-loai'], ['Tim Food - Mì Trộn Indomie & Đồ Ăn Vặt - Hồng Hà', 'Giảm món', 'https://shopeefood.vn/ha-noi/tim-food-mi-tron-indomie-do-an-vat-hong-ha'], ['Như Mây - Bánh Đa Trộn', 'Giảm món', 'https://shopeefood.vn/ha-noi/nhu-may-banh-da-tron'], ['Nem Nướng Nha Trang Ngọc Hằng - Phú Diễn', 'Giảm món', 'https://shopeefood.vn/ha-noi/nem-nuong-nha-trang-ngoc-hang-phu-dien'], ['Hoa Béo - Nem Nướng Ninh Hoà - Xa La', 'Giảm món', 'https://shopeefood.vn/ha-noi/hoa-beo-nem-nuong-nha-trang-xa-la'], ['Bảo Bảo - Mì Trộn Indomie - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/bao-bao-mi-tron-indomie-shop-online'], ['Mì Trộn Indomie 158 - Bùi Ngọc Dương', 'Giảm món', 'https://shopeefood.vn/ha-noi/mi-tron-indomie-158-bui-ngoc-duong'], ['iChi Food - Cháo, Súp & Mỳ Xào - 169 Tôn Đức Thắng', 'Giảm món', 'https://shopeefood.vn/ha-noi/ichi-food-chao-sup-my-xao-169-ton-duc-thang'], ['Bảo Ngọc Food - Mì Trộn Indomie & Đồ Ăn Vặt - Phố Lụa', 'Giảm món', 'https://shopeefood.vn/ha-noi/bao-ngoc-food-mi-tron-indomie-do-an-vat-pho-lua'], ['Gà Luộc, Gà Ủ Muối & Cơm Cháy - Duyên Dương', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-luoc-ga-u-muoi-com-chay-duyen-duong'], ['BUMTRO - Bún Trộn Nam Bộ - Đào Tấn', 'Giảm món', 'https://shopeefood.vn/ha-noi/bumtro-bun-tron-nam-bo-dao-tan'], ['Bún Đậu Mẹt Thủy Mít - C8 Thành Công', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-dau-met-thuy-mit-c8-thanh-cong'], ['Cơm Rang Gà Sốt 30K - Mỹ Đình', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-rang-ga-sot-30k-my-dinh'], ['Bom Bốp - Bún Đậu Mơ', 'Giảm món', 'https://shopeefood.vn/ha-noi/bom-bop-bun-dau-mo'], ['Hoàng Huệ - Cơm Rang & Bún Bò Trộn - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/hoang-hue-com-rang-bun-bo-tron-chua-lang'], ['Bami Sot - Bánh Mì Đen - Lò Đúc', 'Giảm món', 'https://shopeefood.vn/ha-noi/bami-sot-banh-mi-den-lo-duc'], ['Bami King - Bánh Mì Bò Nướng & Cơm Thố - An Trạch', 'Giảm món', 'https://shopeefood.vn/ha-noi/bami-king-banh-mi-bo-nuong-com-tho-an-trach'], ['Sushi Garden', 'Giảm món', 'https://shopeefood.vn/ha-noi/sushi-garden'], ['Cô Tám - Cơm Rang & Cơm Tấm - 126 Hồng Mai', 'Giảm món', 'https://shopeefood.vn/ha-noi/co-tam-com-rang-an-vat-126-hong-mai'], ['A-Phú - Mì Trộn Indomie & Ăn Vặt - Nguyễn Đức Cảnh', 'Giảm món', 'https://shopeefood.vn/ha-noi/a-phu-mi-tron-indomie-an-vat-nguyen-duc-canh'], ['Đức Food - Mì Trộn Indomie - Ngõ 95 Chùa Bộc', 'Giảm món', 'https://shopeefood.vn/ha-noi/duc-food-mi-tron-indomie-ngo-95-chua-boc'], ['Tiệm Mì Indo - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-mi-indo-kim-giang'], ['LATU Quán - Nem Nướng Nha Trang - Yên Phúc', 'Giảm món', 'https://shopeefood.vn/ha-noi/latu-quan-nem-nuong-nha-trang-yen-phuc'], ['Đức Food - Mì Trộn Indomie Online - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/duc-food-mi-tron-indomie-online-kim-giang'], ['Xuân Food - Mì Trộn Indomie - Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/xuan-food-mi-tron-indomie-tay-son'], ['Duy Food - Mì Trộn Indomie', 'Giảm món', 'https://shopeefood.vn/ha-noi/duy-food-mi-tron-indomie'], ['Cuốn Xưa - Phở Cuốn Hà Thành - Tân Mai', 'Giảm món', 'https://shopeefood.vn/ha-noi/cuon-xua-pho-cuon-ha-thanh-tan-mai'], ['Trà Sữa Bobapop - 59 Trần Quốc Vượng', 'Giảm hết 20%', 'https://shopeefood.vn/ha-noi/tra-sua-bobapop-59-tran-quoc-vuong'], ['GÀ RÁN & BURGER GONGFU CHICKEN - 521 Nguyễn Trãi', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-burger-gongfu-chicken-521-nguyen-trai'], ['Trà Sữa Gong Cha - 貢茶 - Hoàng Đạo Thúy', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-gong-cha-hoang-dao-thuy'], ['Bánh Mì Tuhu Bread - Phố Nguyễn Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-tuhu-bread-pho-nguyen-son'], ['Yên Đàm - Trà Sữa Thảo Dược', 'Giảm món', 'https://shopeefood.vn/ha-noi/yen-dam-tra-sua-thao-duoc'], ['Maru Korean - Tiệm Đồ Ăn Hàn Quốc & Trà Sữa - Lê Đại Hành', 'Giảm hết 5%', 'https://shopeefood.vn/ha-noi/maru-korean-tiem-do-an-han-quoc-tra-sua-le-dai-hanh'], ['Bento Delichi - Cơm Gà Xối Mỡ, Cơm Gà Mắm Tỏi - Dương Khuê', 'Giảm món', 'https://shopeefood.vn/ha-noi/bento-delichi-com-ga-xoi-mo-com-ga-mam-toi-duong-khue'], ['Gà Rán Popeyes - Trần Quốc Hoàn', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-popeyes-tran-quoc-hoan'], ['Highlands Coffee - Trà, Cà Phê & Bánh - Imperia Garden', 'Giảm món', 'https://shopeefood.vn/ha-noi/highlands-coffee-tra-ca-phe-banh-imperia-garden'], ['Vinamilk - Giấc Mơ Sữa Việt - Định Công Thượng - AC10091', 'Giảm món', 'https://shopeefood.vn/ha-noi/vinamilk-giac-mo-sua-viet-dinh-cong-thuong-ac10091'], ['Cơm Thố Anh Nguyễn - Bán Đảo Linh Đàm', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tho-anh-nguyen-ban-dao-linh-dam'], ["Domino's Pizza - Xuân La", 'Giảm món', 'https://shopeefood.vn/ha-noi/domino-s-pizza-xuan-la'], ['Trà Sữa Miutea - Phố Xốm', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-miutea-pho-xom'], ['Hủ Tiếu Thái Lan, Trà Sữa Thái, Ăn Vặt - Pi Thai - 136 Vũ Phạm Hàm', 'Giảm món', 'https://shopeefood.vn/ha-noi/hu-tieu-thai-lan-tra-sua-thai-an-vat-pi-thai-136-vu-pham-ham'], ['Sói Biển - Thực phẩm sạch - Số 8 Vũ Thạnh', 'Giảm món', 'https://shopeefood.vn/ha-noi/soi-bien-thuc-pham-sach-so-8-vu-thanh'], ["Fam's Chicken - The Manor", 'Giảm món', 'https://shopeefood.vn/ha-noi/fam-s-chicken-the-manor'], ['Trà Sữa Sharetea Nhà Thờ - Phố Nguyễn Thị Định', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-sharetea-nha-tho-pho-nguyen-thi-dinh'], ['The Coffee House - Lê Thanh Nghị', 'Flash Sale', 'https://shopeefood.vn/ha-noi/the-coffee-house-le-thanh-nghi'], ['Trà Sữa ToCoToCo - 317 Trần Cung', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-317-tran-cung'], ['LaBoong - Trà Ô Long Làng La Boong - Doãn Kế Thiện', 'Flash Sale', 'https://shopeefood.vn/ha-noi/laboong-tra-o-long-lang-la-boong-doan-ke-thien'], ['Trà Sữa Tocotoco - Cầu Giấy', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-262-cau-giay'], ['Tiệm Chè Ngon Đảo Chè - Kem Xôi & Ăn Vặt - Lê Văn Thiêm - Shop Online', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-che-ngon-dao-che-kem-xoi-an-vat-le-van-thiem-shop-online'], ['Mỳ Cay Ngõ - Đồng Me', 'Flash Sale', 'https://shopeefood.vn/ha-noi/my-cay-ngo-dong-me'], ['Gà Rán & Pizza 99', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-ran-pizza-99'], ['Dương Dương - Lẩu Tokbokki, Mỳ Cay, Trà Chanh & Trà Tắc Online - Đồng Me', 'Flash Sale', 'https://shopeefood.vn/ha-noi/duong-duong-lau-tokbokki-my-cay-tra-chanh-tra-tac-online-dong-me'], ['Hân - Tokbokki, Gà Sốt Cay Hàn Quốc & Ăn Vặt - Hồ Tùng Mậu', 'Flash Sale', 'https://shopeefood.vn/ha-noi/han-tokbokki-ga-sot-cay-han-quoc-an-vat-ho-tung-mau'], ['Coco Nama Tea Bar - Nguyễn Khánh Toàn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/coco-nama-tea-bar-nguyen-khanh-toan'], ['Gà Rán Việt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-ran-viet'], ['Đảo Chè - Chè Sạch Vị Ngon - Nguyễn Viết Xuân', 'Flash Sale', 'https://shopeefood.vn/ha-noi/dao-che-che-sach-vi-ngon-nguyen-viet-xuan'], ['Ốc Nguyễn - Đê La Thành', 'Flash Sale', 'https://shopeefood.vn/ha-noi/oc-nguyen-de-la-thanh'], ['Ô Long Đây - 62 Ngọc Khánh', 'Flash Sale', 'https://shopeefood.vn/ha-noi/o-long-day-62-ngoc-khanh'], ['Chè Bưởi Tư Đỉnh - Lương Thế Vinh', 'Flash Sale', 'https://shopeefood.vn/ha-noi/che-buoi-tu-dinh-luong-the-vinh'], ['Mập Quán - Đồ Ăn Vặt & Mỳ Xào - Nguyên Hồng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/map-quan-do-an-vat-my-xao-nguyen-hong'], ['Tiger Sugar - Vũ Trọng Phụng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiger-sugar-vu-trong-phung'], ['Tanka Quán - Chân Gà Nướng & Cánh Gà Nướng - Đê La Thành', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tanka-quan-chan-ga-nuong-canh-ga-nuong-de-la-thanh'], ['Chất Rau Má - Trà Trái Cây & Sữa Đậu Nành - Đỗ Đức Dục', 'Flash Sale', 'https://shopeefood.vn/ha-noi/chat-rau-ma-tra-trai-cay-sua-dau-nanh-do-duc-duc'], ['Bánh Mì Hội An - Đồ Ăn Vặt - Phố Tân Mai', 'Flash Sale', 'https://shopeefood.vn/ha-noi/banh-mi-hoi-an-do-an-vat-pho-tan-mai'], ['Chin Chin - Trà Sữa Đậm Vị & Trà Hoa Quả Tươi - Thuỵ Khuê', 'Flash Sale', 'https://shopeefood.vn/ha-noi/chin-chin-tra-sua-dam-vi-tra-hoa-qua-tuoi-thuy-khue'], ['Việt Nguyễn Coffee - Mai Anh Tuấn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/viet-nguyen-coffee-mai-anh-tuan'], ['Trà Sữa - Mỳ Cay & Đồ Ăn Vặt Huyền Linh - 47 Dương Quảng Hàm', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-my-cay-do-an-vat-huyen-linh-47-duong-quang-ham'], ['SiA Lab - Phê cùng Trà', 'Flash Sale', 'https://shopeefood.vn/ha-noi/sia-lab-phe-cung-tra'], ['December Tea - Trà Hoa Quả Nhiệt Đới & Mì Trộn Indomie - Định Công', 'Flash Sale', 'https://shopeefood.vn/ha-noi/december-tea-tra-hoa-qua-nhiet-doi-mi-tron-indomie-dinh-cong'], ["TrueCoffee Pick'N Go - Lạc Long Quân", 'Flash Sale', 'https://shopeefood.vn/ha-noi/truecoffee-pick-n-go-lac-long-quan'], ['Gà Luộc & Gà Ủ Muối Hoa Tiêu & Gà Rán - Thanh Nhàn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-luoc-ga-u-muoi-hoa-tieu-ga-ran-thanh-nhan'], ['Namsan Chicken - Triệu Việt Vương', 'Flash Sale', 'https://shopeefood.vn/ha-noi/namsan-chicken-trieu-viet-vuong'], ["Papa's Kitchen - Đồ Ăn Hàn Quốc & Tokbokki, Cơm Trộn - Hồng Mai", 'Flash Sale', 'https://shopeefood.vn/ha-noi/papa-s-kitchen-do-an-han-quoc-tokbokki-com-tron-hong-mai'], ['Tiệm Bé Cá – Trà Sữa, Mỳ Ý & Sandwich', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-be-ca-tra-sua-my-y-sandwich'], ['Quỳnh Anh - Gỏi Cuốn Và Ăn Vặt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/quynh-anh-goi-cuon-va-an-vat'], ['Phúc Nguyễn - Trái Cây Tươi & Nước Ép Trái Cây Tươi - Trần Quốc Vượng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/phuc-nguyen-trai-cay-tuoi-nuoc-ep-trai-cay-tuoi-tran-quoc-vuong'], ['Bánh Trung Thu & Mứt Tết Gia Truyền - Hùng Lương', 'Flash Sale', 'https://shopeefood.vn/ha-noi/banh-trung-thu-mut-tet-gia-truyen-hung-luong'], ['Minh Hoàng Bakery - Bông Lan Trứng Muối & Đồ Uống Online - Trần Thái Tông', 'Flash Sale', 'https://shopeefood.vn/ha-noi/minh-hoang-bakery-bong-lan-trung-muoi-do-uong-online-tran-thai-tong'], ['Ngọc Thạch Quán - Sữa Chua & Caramen - Kim Đồng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ngoc-thach-quan-sua-chua-caramen-kim-dong'], ['JangNing - Đồ Uống Và Ăn Vặt Tươi Lành - Quang Trung', 'Flash Sale', 'https://shopeefood.vn/ha-noi/jangning-do-uong-va-an-vat-tuoi-lanh-quang-trung'], ['Ăn Vặt HOTA - Vua Chân Gà Sả Tắc, Chân Gà Sốt Thái & Bánh Tráng Trộn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/an-vat-hota-vua-chan-ga-sa-tac-chan-ga-sot-thai-banh-trang-tron'], ["Susi's Cake - Bông Lan Trứng Muối - Tôn Đức Thắng", 'Flash Sale', 'https://shopeefood.vn/ha-noi/susi-s-cake-bong-lan-trung-muoi-ton-duc-thang'], ['Nem Chua Rán 36 Tạm Thương - Trần Thái Tông', 'Flash Sale', 'https://shopeefood.vn/ha-noi/nem-chua-ran-36-tam-thuong-tran-thai-tong'], ['La Boong - 96 Láng Hạ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/la-boong-96-lang-ha'], ['YH.TANG - Đệ Nhất Trà Sữa Nướng - Trần Phú', 'Flash Sale', 'https://shopeefood.vn/ha-noi/yh-tang-de-nhat-tra-sua-nuong-tran-phu'], ['Cổ Trà - Trà Shan Tuyết 300 Năm Tuổi & Trà Hoa Quả - 94 Trấn Vũ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/co-tra-tra-shan-tuyet-300-nam-tuoi-tra-hoa-qua-94-tran-vu'], ['Chang Hi - Chè Thốt Nốt Dừa Dầm Ngon Nhất Hà Nội Online - Huỳnh Thúc Kháng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/chang-hi-che-thot-not-dua-dam-ngon-nhat-ha-noi-online-huynh-thuc-khang'], ['Chè Mộc Phố - Chè Ngon, Kem Xôi & Tàu Hũ - Tây Mỗ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/che-moc-pho-che-ngon-kem-xoi-tau-hu-tay-mo'], ['Tiệm Trà Chè Sky - Mì Trộn Indomie, Trà Mãng Cầu, Trà Chanh - Thượng Đình', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-tra-che-sky-mi-tron-indomie-tra-mang-cau-tra-chanh-thuong-dinh'], ['Shiba Chef - Bánh Takoyaki & Bánh Xèo Nhật', 'Flash Sale', 'https://shopeefood.vn/ha-noi/shiba-chef-banh-takoyaki-banh-xeo-nhat'], ['Oola - Trà Ô Long Đậm Vị - Tạ Quang Bửu', 'Flash Sale', 'https://shopeefood.vn/ha-noi/oola-tra-o-long-dam-vi-ta-quang-buu'], ["Cha Go Tea & Caf'e - Dương Quảng Hàm", 'Flash Sale', 'https://shopeefood.vn/ha-noi/cha-go-tea-caf-e-duong-quang-ham'], ['Odi Bakery - Trà & Bánh Ngọt - Phan Văn Trường', 'Flash Sale', 'https://shopeefood.vn/ha-noi/odi-bakery-tra-banh-ngot-phan-van-truong'], ['Sành Rau Má, Nước Mía Sầu Riêng & Trà Bí Đao - Chùa Láng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/sanh-rau-ma-nuoc-mia-sau-rieng-tra-bi-dao-chua-lang'], ['LaSiMi - Trà Ngon Đậm Vị - Trần Đại Nghĩa', 'Flash Sale', 'https://shopeefood.vn/ha-noi/lasimi-tra-ngon-dam-vi-tran-dai-nghia'], ['Gà Rán Taiwan Hot Chicken & Tea - Khương Trung', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-ran-taiwan-hot-chicken-tea-khuong-trung'], ['Tocotoco - Goldsilk Complex', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tocotoco-goldsilk-complex'], ['Minh Food - Nem Chua Rán Và Xiên Que', 'Flash Sale', 'https://shopeefood.vn/ha-noi/minh-food-nem-chua-ran-va-xien-que'], ['Trà Sữa Rosier - Fresh Tea & Coffee - Tô Hiến Thành', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-rosier-fresh-tea-coffee-to-hien-thanh'], ['Trà Sữa Tocotoco - 271 Nguyễn Khang', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-271-nguyen-khang'], ['Aroma203 Coffee & Tea', 'Flash Sale', 'https://shopeefood.vn/ha-noi/aroma203-coffee-tea'], ['GA Rau Má & Súp Cua Trứng Bắc Thảo', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-rau-ma-sup-cua-trung-bac-thao'], ['Trà Sữa HAPPY - KĐT Đô Nghĩa', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-happy-kdt-do-nghia'], ['Tiệm Trà Trái Cây Mê Ly - 100 Thái Thịnh', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-tra-trai-cay-me-ly-100-thai-thinh'], ['Bánh Tráng Happy - Mì Trộn, Đồ Ăn Vặt & Trà Sữa - LK 8 Phùng Khoang', 'Flash Sale', 'https://shopeefood.vn/ha-noi/banh-trang-happy-mi-tron-do-an-vat-tra-sua-lk-8-phung-khoang'], ['Thuý Mẹt - Nem Chua Rán Tạm Thương - Ô Chợ Dừa', 'Flash Sale', 'https://shopeefood.vn/ha-noi/thuy-met-nem-chua-ran-tam-thuong-o-cho-dua'], ['San Tokbokki - Ẩm Thực Hàn Quốc - Trần Quốc Hoàn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/san-tokbokki-am-thuc-han-quoc-tran-quoc-hoan'], ['Trà Sữa Winggo - Trà Sữa Kem Trứng Nướng & Trà Hoa Quả - Doãn Kế Thiện', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-winggo-tra-sua-kem-trung-nuong-tra-hoa-qua-doan-ke-thien'], ['Bún Chả Hà Nội - Lạc Long Quân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-cha-ha-noi-lac-long-quan'], ['Tường An - Nước Ép, Sinh Tố & Cà Phê', 'Mã giảm 20%', 'https://shopeefood.vn/ha-noi/tuong-an-nuoc-ep-sinh-to-ca-phe'], ['Maxi Burger - Đại Cồ Việt', 'Giảm đến 250k', 'https://shopeefood.vn/ha-noi/maxi-burger-dai-co-viet'], ['TacoZone - Nguyễn Thái Học', 'Giảm đến 60k', 'https://shopeefood.vn/ha-noi/tacozone-nguyen-thai-hoc'], ['Pizza Home - Đại Cồ Việt', 'Deal 4k', 'https://shopeefood.vn/ha-noi/pizza-home-dai-co-viet'], ['Mr. Spaghetti - Nguyễn Thái Học', 'Giảm đến 60k', 'https://shopeefood.vn/ha-noi/mr-spaghetti-nguyen-thai-hoc'], ['SugarKing - Đường Nâu Đài Loan - Giảng Võ', 'Giảm hết 45%', 'https://shopeefood.vn/ha-noi/sugarking-duong-nau-dai-loan-giang-vo'], ['Nem Chạo Dương Thanh - Chạo, Nem Nắm, Nem Tai & Bún Chạo', 'Giảm món', 'https://shopeefood.vn/ha-noi/nem-chao-duong-thanh-nem-chao-nem-nam-nem-tai-giap-bat'], ['Thanh Food - Mì Trộn Indomie & Bánh Mì - Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/thanh-food-mi-tron-indomie-banh-mi-tay-son.w67goq'], ['Tâm Food - Mì Trộn Indomie & Bánh Mì - Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/tam-food-mi-tron-indomie-banh-mi-tay-son.i1rvs9'], ['Cô Quỳnh - Chè Mùa Hè & Sinh Tố Nước Ép', 'Mã giảm 15%', 'https://shopeefood.vn/ha-noi/co-quynh-che-mua-he-sinh-to-nuoc-ep'], ['Bánh Mì Nem Khoai Và Bánh Gà - Minh Châu', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-nem-khoai-va-banh-ga-minh-chau'], ['Milktea - Hoa Quả Dầm Caramen Sữa Chua Online - Bùi Xương Trạch', 'Giảm món', 'https://shopeefood.vn/ha-noi/milktea-hoa-qua-dam-caramen-sua-chua-online-bui-xuong-trach'], ['Nhi Food - Nem Chua Tạm thương & Mì Trộn Indomie - Phùng Khoang', 'Giảm món', 'https://shopeefood.vn/ha-noi/nhi-food-nem-chua-tam-thuong-mi-tron-indomie-phung-khoang'], ['Thanh Tâm - Chuyên Trà Sữa & Đồ Ăn Vặt - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/thanh-tam-chuyen-tra-sua-do-an-vat-shop-online.1ng25z'], ['Bánh Tráng Dì Oanh', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-trang-di-oanh'], ['Nem Chua Rán, Gà Rán & Mẹt Ăn Vặt - Chiến Thắng', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/nem-chua-ran-ga-ran-met-an-vat-chien-thang'], ['Fish Love Cake - Bánh Sinh Nhật - Hồng Hà', 'Giảm món', 'https://shopeefood.vn/ha-noi/fish-love-cake-banh-sinh-nhat-hong-ha'], ['Bánh Mì Nướng Muối Ớt Minh Châu - Hoa Bằng', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-nuong-muoi-ot-minh-chau-hoa-bang'], ['Trà Chanh Xiên Que - 372B Xã Đàn', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-chanh-xien-que-372b-xa-dan.pacj45'], ['Chè Thủy - Quán chè - Thành Công', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/che-thuy-quan-che-thanh-cong'], ['Super Chicken - Tiệm Gà Online', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/super-chicken-tiem-ga-online'], ['Bún Cá Gia Quất - Bún & Bánh Đa - Gia Quất', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-ca-gia-quat-bun-banh-da-gia-quat'], ['Tiệm Nhà - Milo Dầm - La Thành', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-nha-milo-dam-la-thanh'], ['NEM CHUA RÁN HỒNG HƯƠNG DỊCH VỌNG - 23 Ngõ 2E Phố Dịch Vọng', 'Giảm món', 'https://shopeefood.vn/ha-noi/nem-chua-ran-hong-huong-dich-vong-23-ngo-2e-pho-di-ch-vo-ng.98ocvs'], ['Linh Nhi Juice - Nước Ép & Sinh Tố Nguyên Chất', 'Giảm món', 'https://shopeefood.vn/ha-noi/linh-nhi-juice-nuoc-ep-sinh-to-nguyen-chat.egeq8c'], ['Nem Lụi Huế - Ăn Là Like - Thụy Khuê', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/nem-lui-an-la-like'], ['Bánh Mì Cô Hoa - Gà Popcorn & Bánh Mì Gà Nem Khoai - Võ Quý Huân', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-co-hoa-ga-popcorn-banh-mi-ga-nem-khoai-vo-quy-huan.joplgf'], ['Bếp Ba Bột - Chân Gà Sốt Thái & Chân Gà Hấp Thảo Quả - Nghĩa Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bep-ba-bot-chan-ga-sot-thai-chan-ga-hap-thao-qua-nghia-tan'], ['Tiệm Pizza & Mỳ Trộn InDoMi - Tổ 11', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-pizza-my-tron-indomi-to-11'], ['Lương Tâm - Bánh Mì, Burger & Đồ Trộn', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/luong-tam-banh-mi-burger-do-tron'], ['Bếp Tuệ An - Homemade & Vegan food', 'Giảm món', 'https://shopeefood.vn/ha-noi/bep-tue-an-homemade-vegan-food'], ['Dacheng Food - Đồ Ăn Vặt Nội Địa Trung - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/dacheng-food-do-an-vat-noi-dia-trung-shop-online'], ['Ăn Vặt Cay Cay - Ăn Vặt Nội Địa Trung - Phố Đốc Ngữ', 'Giảm món', 'https://shopeefood.vn/ha-noi/an-vat-cay-cay-an-vat-noi-dia-trung-pho-doc-ngu']]
+[2024-09-12T08:02:58.208+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240911T000000, start_date=20240912T080202, end_date=20240912T080258
+[2024-09-12T08:02:58.264+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T08:02:58.307+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-12T08:24:20.543+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T08:24:20.552+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T08:24:20.553+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T08:24:20.565+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-11 00:00:00+00:00
+[2024-09-12T08:24:20.570+0000] {standard_task_runner.py:60} INFO - Started process 325 to run task
+[2024-09-12T08:24:20.573+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'scheduled__2024-09-11T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpqj99gcqf']
+[2024-09-12T08:24:20.576+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask crawl_list_restaurant
+[2024-09-12T08:24:20.624+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [running]> on host 7ad5c45efd02
+[2024-09-12T08:24:20.696+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-11T00:00:00+00:00'
+[2024-09-12T08:24:37.506+0000] {logging_mixin.py:188} INFO - Lỗi khi chờ đợi sản phẩm: Message:
+[2024-09-12T08:24:37.556+0000] {logging_mixin.py:188} INFO - Lỗi khi chuyển trang hoặc crawl trang: Message: no such element: Unable to locate element: {"method":"css selector","selector":"a[href="#"] .icon-paging-next"}
+  (Session info: chrome=128.0.6613.119); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x5624a855b86a <unknown>
+#1 0x5624a8229e50 <unknown>
+#2 0x5624a8279644 <unknown>
+#3 0x5624a8279931 <unknown>
+#4 0x5624a82bf534 <unknown>
+#5 0x5624a829e4bd <unknown>
+#6 0x5624a82bc9c6 <unknown>
+#7 0x5624a829e233 <unknown>
+#8 0x5624a826c093 <unknown>
+#9 0x5624a826d09e <unknown>
+#10 0x5624a8522acb <unknown>
+#11 0x5624a8526a81 <unknown>
+#12 0x5624a850e695 <unknown>
+#13 0x5624a85275f2 <unknown>
+#14 0x5624a84f386f <unknown>
+#15 0x5624a854a668 <unknown>
+#16 0x5624a854a832 <unknown>
+#17 0x5624a855a65c <unknown>
+#18 0x7fad88b4aa94 <unknown>
+#19 0x7fad88bd7c3c <unknown>
+[2024-09-12T08:24:37.695+0000] {python.py:202} INFO - Done. Returned value was: []
+[2024-09-12T08:24:37.723+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240911T000000, start_date=20240912T082420, end_date=20240912T082437
+[2024-09-12T08:24:37.760+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T08:24:37.827+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-12T08:37:39.907+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T08:37:39.916+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T08:37:39.917+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T08:37:39.929+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-11 00:00:00+00:00
+[2024-09-12T08:37:39.934+0000] {standard_task_runner.py:60} INFO - Started process 319 to run task
+[2024-09-12T08:37:39.938+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'scheduled__2024-09-11T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpyea8itks']
+[2024-09-12T08:37:39.940+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask crawl_list_restaurant
+[2024-09-12T08:37:39.993+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [running]> on host 329a68cb1c0e
+[2024-09-12T08:37:40.077+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-11T00:00:00+00:00'
+[2024-09-12T08:37:53.691+0000] {python.py:202} INFO - Done. Returned value was: [['Bếp Việt - Cơm Văn Phòng - Đông Thiên', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-viet-com-van-phong-dong-thien'], ['Trà Sữa Tocotoco - Nguyễn Hoàng', 'Đồng giá 29k', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-nguyen-hoang'], ['Bún Thủy - Trần Nhật Duật', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-thuy-tran-nhat-duat'], ['Texas Chicken - Aeon Mall Hà Đông', 'Giảm món', 'https://shopeefood.vn/ha-noi/texas-chicken-aeon-mall-ha-dong'], ['Long Wang Cơ Sở 1 - Dim Sum Hongkong - 84 Ngọc Khánh', 'Giảm món', 'https://shopeefood.vn/ha-noi/long-wang-co-so-1-dim-sum-hongkong-84-ngoc-khanh'], ['Korea House - Đồ Ăn Hàn Quốc Và Cơm Trộn - Ngõ Chùa Liên Phái', 'Giảm giá 20%', 'https://shopeefood.vn/ha-noi/korea-house-do-an-han-quoc-va-com-tron-ngo-chua-lien-phai'], ['Tiệm Gà Rán Óng Ánh - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-ong-anh-chua-lang'], ['Trà Sữa Seko Tea - Mễ Trì Thượng', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/seko-tea-tra-sua-dai-loan'], ['Royal Tea - Trà Sữa Trân Châu - Hồ Tùng Mậu', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/royal-tea-tra-sua-tran-chau-ho-tung-mau'], ['Trà sữa LeeTee - Kem Trứng & Trà Hoa Quả - Láng Hạ', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/tra-sua-leetee-kem-trung-tra-hoa-qua-lang-ha'], ['Trà Sữa Tocotoco - Thiên Đường Bảo Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-thien-duong-bao-son'], ['Ngọc - Cháo Lòng Ngon & Bún Đậu Mẹt', 'Giảm hết 20%', 'https://shopeefood.vn/ha-noi/ngoc-chao-long-ngon-bun-dau-met'], ['Bánh Mì Bắp - Gà Popcorn & Bánh Mì Gà Nem - Trần Quang Diệu', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/banh-mi-bap-ga-popcorn-banh-mi-ga-nem-tran-quang-dieu'], ['Master Tea 美茶 - Bồ Đề', 'Giảm món', 'https://shopeefood.vn/ha-noi/master-tea-%E7%BE%8E%E8%8C%B6-bo-de'], ['Trà Sữa Royaltea - Lê Lai', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/tra-sua-royaltea-le-lai'], ['Bếp Mẹ Thỏ - Bún, Miến & Phở Trộn Online', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-me-tho-bun-mien-pho-tron-online'], ['Kem Dairy Queen - Royal City', 'Giảm món', 'https://shopeefood.vn/ha-noi/dairy-queen-royal-city'], ["Kem Swensen's - Times City", 'Giảm món', 'https://shopeefood.vn/ha-noi/kem-swensen-s-times-city'], ['Tiệm Cơm ChisnBa - Cơm Rang Zòn - Trần Vỹ', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/tiem-com-chisnba-com-rang-zon-tran-vy'], ['Trà Chanh Dương Dương - Mì Cay, Tokbokki - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-chanh-duong-duong-mi-cay-tokbokki-shop-online'], ['Gà Rán Five Star - 04 Yên Hòa', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-five-star-04-yen-hoa'], ['Bánh Mì Minh Nhật - Duy Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-minh-nhat-duy-tan'], ['The Pizza Company - The Manor', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-pizza-company-the-manor'], ['Tâm Anh - Nem Nướng Nha Trang - Ngõ Chùa Đối Diện 228 Mễ Trì Thượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tam-anh-nem-nuong-nha-trang-ngo-chua-doi-dien-228-me-tri-thuong'], ['Mokchang - Đồ Ăn Hàn Quốc - Láng Hạ', 'Giảm món', 'https://shopeefood.vn/ha-noi/mokchang-do-an-han-quoc-lang-ha'], ['Tiệm Gà Rán Số 19 - Hào Nam', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-so-19-hao-nam'], ['Bonchon Chicken - Lạc Long Quân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bonchon-chicken-lac-long-quan'], ['Bếp Mẹ Su - Phở Tíu - Shop Online - Lạc Long Quân', 'Giảm hết 22%', 'https://shopeefood.vn/ha-noi/bep-me-su-pho-tiu-shop-online-lac-long-quan'], ['Vịt 29 - Vịt Quay Bắc Kinh - Bạch Mai', 'Giảm món', 'https://shopeefood.vn/ha-noi/vit-29-vit-quay-bac-kinh-bach-mai'], ['Sữa Chua Trân Châu Hạ Long - Quốc Lộ 32', 'Giảm món', 'https://shopeefood.vn/ha-noi/sua-chua-tran-chau-ha-long-quoc-lo-32']]
+[2024-09-12T08:37:53.720+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240911T000000, start_date=20240912T083739, end_date=20240912T083753
+[2024-09-12T08:37:53.763+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T08:37:53.791+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-12T08:55:42.985+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T08:55:42.994+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T08:55:42.995+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T08:55:43.008+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-11 00:00:00+00:00
+[2024-09-12T08:55:43.013+0000] {standard_task_runner.py:60} INFO - Started process 302 to run task
+[2024-09-12T08:55:43.018+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'scheduled__2024-09-11T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpl2miq5cp']
+[2024-09-12T08:55:43.021+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask crawl_list_restaurant
+[2024-09-12T08:55:43.074+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [running]> on host cde7247848aa
+[2024-09-12T08:55:43.150+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-11T00:00:00+00:00'
+[2024-09-12T08:56:04.664+0000] {python.py:202} INFO - Done. Returned value was: [['Bếp Việt - Cơm Văn Phòng - Đông Thiên', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-viet-com-van-phong-dong-thien'], ['Trà Sữa Tocotoco - Nguyễn Hoàng', 'Đồng giá 29k', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-nguyen-hoang'], ['Bún Thủy - Trần Nhật Duật', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-thuy-tran-nhat-duat'], ['Texas Chicken - Aeon Mall Hà Đông', 'Giảm món', 'https://shopeefood.vn/ha-noi/texas-chicken-aeon-mall-ha-dong'], ['Long Wang Cơ Sở 1 - Dim Sum Hongkong - 84 Ngọc Khánh', 'Giảm món', 'https://shopeefood.vn/ha-noi/long-wang-co-so-1-dim-sum-hongkong-84-ngoc-khanh'], ['Tiệm Gà Rán Óng Ánh - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-ong-anh-chua-lang'], ['Trà Sữa Seko Tea - Mễ Trì Thượng', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/seko-tea-tra-sua-dai-loan'], ['Royal Tea - Trà Sữa Trân Châu - Hồ Tùng Mậu', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/royal-tea-tra-sua-tran-chau-ho-tung-mau'], ['Trà sữa LeeTee - Kem Trứng & Trà Hoa Quả - Láng Hạ', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/tra-sua-leetee-kem-trung-tra-hoa-qua-lang-ha'], ['Trà Sữa Tocotoco - Thiên Đường Bảo Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-thien-duong-bao-son'], ['Ngọc - Cháo Lòng Ngon & Bún Đậu Mẹt', 'Giảm hết 20%', 'https://shopeefood.vn/ha-noi/ngoc-chao-long-ngon-bun-dau-met'], ['Bánh Mì Bắp - Gà Popcorn & Bánh Mì Gà Nem - Trần Quang Diệu', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/banh-mi-bap-ga-popcorn-banh-mi-ga-nem-tran-quang-dieu'], ['Master Tea 美茶 - Bồ Đề', 'Giảm món', 'https://shopeefood.vn/ha-noi/master-tea-%E7%BE%8E%E8%8C%B6-bo-de'], ['Trà Sữa Royaltea - Lê Lai', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/tra-sua-royaltea-le-lai'], ['Bếp Mẹ Thỏ - Bún, Miến & Phở Trộn Online', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-me-tho-bun-mien-pho-tron-online'], ['Kem Dairy Queen - Royal City', 'Giảm món', 'https://shopeefood.vn/ha-noi/dairy-queen-royal-city'], ["Kem Swensen's - Times City", 'Giảm món', 'https://shopeefood.vn/ha-noi/kem-swensen-s-times-city'], ['Tiệm Cơm ChisnBa - Cơm Rang Zòn - Trần Vỹ', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/tiem-com-chisnba-com-rang-zon-tran-vy'], ['Trà Chanh Dương Dương - Mì Cay, Tokbokki - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-chanh-duong-duong-mi-cay-tokbokki-shop-online'], ['Gà Rán Five Star - 04 Yên Hòa', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-five-star-04-yen-hoa'], ['Bánh Mì Minh Nhật - Duy Tân', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-minh-nhat-duy-tan'], ['The Pizza Company - The Manor', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-pizza-company-the-manor'], ['Tâm Anh - Nem Nướng Nha Trang - Ngõ Chùa Đối Diện 228 Mễ Trì Thượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tam-anh-nem-nuong-nha-trang-ngo-chua-doi-dien-228-me-tri-thuong'], ['Mokchang - Đồ Ăn Hàn Quốc - Láng Hạ', 'Giảm món', 'https://shopeefood.vn/ha-noi/mokchang-do-an-han-quoc-lang-ha'], ['Tiệm Gà Rán Số 19 - Hào Nam', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-so-19-hao-nam'], ['Bonchon Chicken - Lạc Long Quân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bonchon-chicken-lac-long-quan'], ['Bếp Mẹ Su - Phở Tíu - Shop Online - Lạc Long Quân', 'Giảm hết 22%', 'https://shopeefood.vn/ha-noi/bep-me-su-pho-tiu-shop-online-lac-long-quan'], ['Vịt 29 - Vịt Quay Bắc Kinh - Bạch Mai', 'Giảm món', 'https://shopeefood.vn/ha-noi/vit-29-vit-quay-bac-kinh-bach-mai'], ['Sữa Chua Trân Châu Hạ Long - Quốc Lộ 32', 'Giảm món', 'https://shopeefood.vn/ha-noi/sua-chua-tran-chau-ha-long-quoc-lo-32'], ['Mỳ Ếch Chua Cay Trần Quỳnh - 30 Nguyễn Thái Học', 'Giảm món', 'https://shopeefood.vn/ha-noi/my-ech-chua-cay-tran-quynh-30-nguyen-thai-hoc']]
+[2024-09-12T08:56:04.704+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240911T000000, start_date=20240912T085542, end_date=20240912T085604
+[2024-09-12T08:56:04.746+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T08:56:04.785+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-09-12T11:01:24.386+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T11:01:24.395+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [queued]>
+[2024-09-12T11:01:24.396+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-09-12T11:01:24.409+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_list_restaurant> on 2024-09-11 00:00:00+00:00
+[2024-09-12T11:01:24.413+0000] {standard_task_runner.py:60} INFO - Started process 419 to run task
+[2024-09-12T11:01:24.417+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_list_restaurant', 'scheduled__2024-09-11T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp0j_lyczb']
+[2024-09-12T11:01:24.420+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask crawl_list_restaurant
+[2024-09-12T11:01:24.470+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_list_restaurant scheduled__2024-09-11T00:00:00+00:00 [running]> on host bc7cb9c82b76
+[2024-09-12T11:01:24.559+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_list_restaurant' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-11T00:00:00+00:00'
+[2024-09-12T11:02:16.842+0000] {python.py:202} INFO - Done. Returned value was: [['Bếp Việt - Cơm Văn Phòng - Đông Thiên', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-viet-com-van-phong-dong-thien'], ['Trà Sữa Tocotoco - Nguyễn Hoàng', 'Đồng giá 29k', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-nguyen-hoang'], ['Bún Thủy - Trần Nhật Duật', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-thuy-tran-nhat-duat'], ['Texas Chicken - Aeon Mall Hà Đông', 'Giảm món', 'https://shopeefood.vn/ha-noi/texas-chicken-aeon-mall-ha-dong'], ['Long Wang Cơ Sở 1 - Dim Sum Hongkong - 84 Ngọc Khánh', 'Giảm món', 'https://shopeefood.vn/ha-noi/long-wang-co-so-1-dim-sum-hongkong-84-ngoc-khanh'], ['Korea House - Đồ Ăn Hàn Quốc Và Cơm Trộn - Ngõ Chùa Liên Phái', 'Giảm giá 20%', 'https://shopeefood.vn/ha-noi/korea-house-do-an-han-quoc-va-com-tron-ngo-chua-lien-phai'], ['Tiệm Gà Rán Óng Ánh - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-ong-anh-chua-lang'], ['Trà Sữa Seko Tea - Mễ Trì Thượng', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/seko-tea-tra-sua-dai-loan'], ['Royal Tea - Trà Sữa Trân Châu - Hồ Tùng Mậu', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/royal-tea-tra-sua-tran-chau-ho-tung-mau'], ['Trà sữa LeeTee - Kem Trứng & Trà Hoa Quả - Láng Hạ', 'Giảm hết 40%', 'https://shopeefood.vn/ha-noi/tra-sua-leetee-kem-trung-tra-hoa-qua-lang-ha'], ['Trà Sữa Tocotoco - Thiên Đường Bảo Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-thien-duong-bao-son'], ['Bánh Mì Bắp - Gà Popcorn & Bánh Mì Gà Nem - Trần Quang Diệu', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/banh-mi-bap-ga-popcorn-banh-mi-ga-nem-tran-quang-dieu'], ['Phở Cuốn Anh Tú', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/pho-cuon-anh-tu'], ['Master Tea 美茶 - Bồ Đề', 'Giảm món', 'https://shopeefood.vn/ha-noi/master-tea-%E7%BE%8E%E8%8C%B6-bo-de'], ['Trà Sữa Royaltea - Lê Lai', 'Giảm hết 50%', 'https://shopeefood.vn/ha-noi/tra-sua-royaltea-le-lai'], ['Bếp Mẹ Thỏ - Bún, Miến & Phở Trộn Online', 'Giảm hết 10%', 'https://shopeefood.vn/ha-noi/bep-me-tho-bun-mien-pho-tron-online'], ['Kem Dairy Queen - Royal City', 'Giảm món', 'https://shopeefood.vn/ha-noi/dairy-queen-royal-city'], ["Kem Swensen's - Times City", 'Giảm món', 'https://shopeefood.vn/ha-noi/kem-swensen-s-times-city'], ['Tiệm Cơm ChisnBa - Cơm Rang Zòn - Hai Bà Trưng', 'Giảm hết 15%', 'https://shopeefood.vn/ha-noi/tiem-com-chisnba-com-rang-zon-hai-ba-trung'], ['Trà Chanh Dương Dương - Mì Cay, Tokbokki - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-chanh-duong-duong-mi-cay-tokbokki-shop-online'], ['Gà Rán Five Star - 04 Yên Hòa', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-five-star-04-yen-hoa'], ['Mỳ Cay Ngõ - Đồng Me', 'Giảm món', 'https://shopeefood.vn/ha-noi/my-cay-ngo-dong-me'], ['The Pizza Company - The Manor', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-pizza-company-the-manor'], ['Tâm Anh - Nem Nướng Nha Trang - Ngõ Chùa Đối Diện 228 Mễ Trì Thượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/tam-anh-nem-nuong-nha-trang-ngo-chua-doi-dien-228-me-tri-thuong'], ['YH.TANG - Đệ Nhất Trà Sữa Nướng - Trần Phú', 'Giảm hết 5%', 'https://shopeefood.vn/ha-noi/yh-tang-de-nhat-tra-sua-nuong-tran-phu'], ['Bonchon Chicken - Lạc Long Quân', 'Giảm món', 'https://shopeefood.vn/ha-noi/bonchon-chicken-lac-long-quan'], ['Minh Hoàng Bakery - Bông Lan Trứng Muối & Đồ Uống Online - Trần Thái Tông', 'Giảm hết 5%', 'https://shopeefood.vn/ha-noi/minh-hoang-bakery-bong-lan-trung-muoi-do-uong-online-tran-thai-tong'], ['Bếp Mẹ Su - Phở Tíu - Shop Online - Lạc Long Quân', 'Giảm hết 22%', 'https://shopeefood.vn/ha-noi/bep-me-su-pho-tiu-shop-online-lac-long-quan'], ['Vịt 29 - Vịt Quay Bắc Kinh - Bạch Mai', 'Giảm món', 'https://shopeefood.vn/ha-noi/vit-29-vit-quay-bac-kinh-bach-mai'], ['Sữa Chua Trân Châu Hạ Long - Quốc Lộ 32', 'Giảm món', 'https://shopeefood.vn/ha-noi/sua-chua-tran-chau-ha-long-quoc-lo-32'], ['Highlands Coffee - Trà, Cà Phê & Bánh - Eco Lake View', 'Giảm món', 'https://shopeefood.vn/ha-noi/highlands-coffee-tra-ca-phe-banh-eco-lake-view'], ['The Alley - Trà Sữa Đài Loan - 48 Trần Phú', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-alley-tra-sua-dai-loan-tran-phu'], ['Trà Sữa Tocotoco - Phú Diễn', 'Giảm hết 30%', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-phu-dien'], ['Nọng FOOD - Mì Trộn Indomie & Trà Chanh - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/noong-food-my-tron-indomie-tra-chanh-kim-giang'], ['PiPo Quán - Bánh Tráng Cuốn Thịt Heo', 'Giảm món', 'https://shopeefood.vn/ha-noi/pipo-quan-banh-trang-cuon-thit-heo'], ['Gà Rán KFC - Hồ Gươm Plaza', 'Giảm món', 'https://shopeefood.vn/ha-noi/kfc-ho-guom-plaza'], ['Bánh Tráng Trộn 98 - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-trang-tron-98-chua-lang'], ['Snap Food - Cơm, Bún & Bánh Mì Healthy - Tôn Đức Thắng', 'Giảm món', 'https://shopeefood.vn/ha-noi/snap-food-com-bun-banh-mi-healthy-ton-duc-thang'], ['TOUS les JOURS - Lý Thường Kiệt', 'Giảm món', 'https://shopeefood.vn/ha-noi/tous-les-jours-ly-thuong-kiet'], ['Anh Béo - Bún & Bánh Đa Trộn - Vĩnh Hưng', 'Giảm món', 'https://shopeefood.vn/ha-noi/anh-beo-bun-banh-da-tron-vinh-hung'], ['Ốc Hương Trang® - 139B Lê Hồng Phong', 'Giảm món', 'https://shopeefood.vn/ha-noi/oc-huong-trang-139b-le-hong-phong'], ['Guu Chicken - Cơm Gà & Gà Rán - Hoàng Hoa Thám', 'Giảm món', 'https://shopeefood.vn/ha-noi/guu-chicken-com-ga-ga-ran-hoang-hoa-tham'], ['Gugsumi - Bún Trộn Healthy - Khương Trung', 'Giảm món', 'https://shopeefood.vn/ha-noi/gugsumi-bun-tron-healthy-khuong-trung'], ['Cháo, Bánh Gối, Óc Hầm & Đồ Ăn Vặt - Trần Thái Tông', 'Giảm món', 'https://shopeefood.vn/ha-noi/chao-banh-goi-oc-ham-do-an-vat-tran-thai-tong'], ['Xôi Yến - Bách Khoa', 'Giảm món', 'https://shopeefood.vn/ha-noi/xoi-yen-bach-khoa'], ['Quán Ăn Hợp Tác Xã & Cơm Niêu - Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/quan-an-hop-tac-xa-com-nieu-tay-son'], ['Pepperonis Pizza - Lê Duẩn', 'Giảm món', 'https://shopeefood.vn/ha-noi/pepperonis-pizza-le-duan'], ['Mỏ Khoét Quán - Cơm Gà Sốt Cay Hàn Quốc - Trần Cung', 'Giảm món', 'https://shopeefood.vn/ha-noi/mo-khoet-quan-com-ga-sot-cay-han-quoc-tran-cung'], ['Hương Vị Việt - Gà Rán & Gà Ủ Muối - Bùi Xương Trạch', 'Giảm món', 'https://shopeefood.vn/ha-noi/huong-vi-viet-ga-ran-ga-u-muoi-bui-xuong-trach'], ['Giang Cún - Bún Thái Hải Sản - Định Công Thượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/giang-cun-bun-thai-hai-san-dinh-cong-thuong'], ['Gà Rán & Gà Ủ Muối Hoa Tiêu - Hoàng Ngân', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-ga-u-muoi-hoa-tieu-hoang-ngan'], ['Dakgalbi - Tiệm Gà Rán Hàn Quốc - 29 Ngõ Tự Do', 'Giảm món', 'https://shopeefood.vn/ha-noi/dakgalbi-tiem-ga-ran-han-quoc-29-ngo-tu-do'], ['Cơm Thố Bách Khoa - Khâm Thiên', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tho-bach-khoa-kham-thien'], ['Cơm Tấm Anh Ba Sài Gòn', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tam-anh-ba-sai-gon'], ['Cơm Tấm 3 Ông Tướng - Minh Khai', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-tam-ba-ong-tuong'], ['Cơm Gà Hải Thuỷ - Bún Đậu Mắm Tôm & Bún Chả', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-ga-hai-thuy-bun-dau-mam-tom-bun-cha'], ['Bún Đậu Mai Dung', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-dau-mai-dung'], ['Bún Cá Hiếu Chi - Vũ Tông Phan', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-ca-hieu-chi-vu-tong-phan'], ['Bin Bon - Mì Trộn Indomie - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/bin-bon-mi-tron-indomie-kim-giang'], ["Al Fresco's - Pizza, Mỳ Ý, Sườn, Steak Bò Bít Tết - Hai Bà Trưng", 'Giảm món', 'https://shopeefood.vn/ha-noi/al-fresco-s-hai-ba-trung'], ['Anh Béo - Bún Miến Ngan - Trần Quốc Vượng', 'Giảm món', 'https://shopeefood.vn/ha-noi/anh-beo-bun-mien-ngan-tran-quoc-vuong'], ['Cơm Phố - Cơm Gà & Cơm Bò - Dương Khuê', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-pho-com-ga-com-bo-duong-khue'], ['Cơm Cô Ba - Cơm Văn Phòng', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-co-ba-com-van-phong'], ['Bún Đậu Mẹt Minh Thư - Văn Minh', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-dau-met-minh-thu-van-minh'], ['Minh Phương - Nem Nướng Nha Trang', 'Giảm món', 'https://shopeefood.vn/ha-noi/minh-phuong-nem-nuong-nha-trang'], ['Mì Trộn Indomie Gấu Bé - 5b 92/31 Nguyễn Khánh Toàn', 'Giảm món', 'https://shopeefood.vn/ha-noi/mi-tron-indomie-gau-be-5b-92-31-nguyen-khanh-toan'], ['Phở Xào Duyên Béo', 'Giảm món', 'https://shopeefood.vn/ha-noi/pho-xao-duyen-beo'], ['Quang Thắng - Cơm Ngon Văn Phòng', 'Giảm món', 'https://shopeefood.vn/ha-noi/quang-thang-com-ngon-van-phong'], ['LQS - Chuyên Bún Bò Huế & Cơm Rang Giòn - Trường Chinh', 'Giảm món', 'https://shopeefood.vn/ha-noi/lqs-chuyen-bun-bo-hue-com-rang-gion-online'], ['Cô Ba - Nem Nướng Nha Trang - Minh Khai', 'Giảm món', 'https://shopeefood.vn/ha-noi/co-ba-nem-nuong-nha-trang-minh-khai'], ['Pizza Ông Tây - Đỗ Quang', 'Giảm món', 'https://shopeefood.vn/ha-noi/pizza-ong-tay-do-quang'], ['Cơm Rang Hòa - Tô Hiệu', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-rang-hoa'], ['Hà Béo - Ăn Vặt Các Loại', 'Giảm món', 'https://shopeefood.vn/ha-noi/ha-beo-an-vat-cac-loai'], ['Tim Food - Mì Trộn Indomie & Đồ Ăn Vặt - Hồng Hà', 'Giảm món', 'https://shopeefood.vn/ha-noi/tim-food-mi-tron-indomie-do-an-vat-hong-ha'], ['Như Mây - Bánh Đa Trộn', 'Giảm món', 'https://shopeefood.vn/ha-noi/nhu-may-banh-da-tron'], ['Nem Nướng Nha Trang Ngọc Hằng - Phú Diễn', 'Giảm món', 'https://shopeefood.vn/ha-noi/nem-nuong-nha-trang-ngoc-hang-phu-dien'], ['Hoa Béo - Nem Nướng Ninh Hoà - Xa La', 'Giảm món', 'https://shopeefood.vn/ha-noi/hoa-beo-nem-nuong-nha-trang-xa-la'], ['Bảo Bảo - Mì Trộn Indomie - Shop Online', 'Giảm món', 'https://shopeefood.vn/ha-noi/bao-bao-mi-tron-indomie-shop-online'], ['Quán 65 - Cơm Văn Phòng - Nguyễn Trãi', 'Giảm món', 'https://shopeefood.vn/ha-noi/quan-65-com-van-phong-nguyen-trai'], ['Mì Trộn Indomie 158 - Bùi Ngọc Dương', 'Giảm món', 'https://shopeefood.vn/ha-noi/mi-tron-indomie-158-bui-ngoc-duong'], ['iChi Food - Cháo, Súp & Mỳ Xào - 169 Tôn Đức Thắng', 'Giảm món', 'https://shopeefood.vn/ha-noi/ichi-food-chao-sup-my-xao-169-ton-duc-thang'], ['Cơm 3 Miền - Cơm Văn Phòng - Nguyễn Khang', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-3-mien-com-van-phong-nguyen-khang'], ['Duy Nhất - Phở Bò & Cơm Rang - Vĩnh Hưng', 'Giảm món', 'https://shopeefood.vn/ha-noi/duy-nhat-pho-bo-com-rang-vinh-hung'], ['Zen Zen - Cơm Gà, Gà Rán & Cơm Bò - Trần Duy Hưng', 'Giảm món', 'https://shopeefood.vn/ha-noi/zen-zen-com-ga-ga-ran-com-bo-tran-duy-hung'], ['A Lẩu - Cháo Lòng', 'Giảm món', 'https://shopeefood.vn/ha-noi/a-lau-chao-long'], ['Gà Luộc, Gà Ủ Muối & Cơm Cháy - Duyên Dương', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-luoc-ga-u-muoi-com-chay-duyen-duong'], ['Bún Đậu Mẹt Thủy Mít - C8 Thành Công', 'Giảm món', 'https://shopeefood.vn/ha-noi/bun-dau-met-thuy-mit-c8-thanh-cong'], ['Bom Bốp - Bún Đậu Mơ', 'Giảm món', 'https://shopeefood.vn/ha-noi/bom-bop-bun-dau-mo'], ['Tiệm Mì Tươi Ramen2go', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-mi-tuoi-ramen2go'], ['Hoàng Huệ - Cơm Rang & Bún Bò Trộn - Chùa Láng', 'Giảm món', 'https://shopeefood.vn/ha-noi/hoang-hue-com-rang-bun-bo-tron-chua-lang'], ['Cơm Văn Phòng & Cơm Niêu Hợp Tác Xã - Hồng Hà', 'Giảm món', 'https://shopeefood.vn/ha-noi/com-van-phong-com-nieu-hop-tac-xa-hong-ha'], ['Gà Tươi Mạnh Hoạch - Xuân La', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-tuoi-manh-hoach-xuan-la'], ['Bami Sot - Bánh Mì Đen - Lò Đúc', 'Giảm món', 'https://shopeefood.vn/ha-noi/bami-sot-banh-mi-den-lo-duc'], ['Bami King - Bánh Mì Bò Nướng & Cơm Thố - An Trạch', 'Giảm món', 'https://shopeefood.vn/ha-noi/bami-king-banh-mi-bo-nuong-com-tho-an-trach'], ['Sushi Garden', 'Giảm món', 'https://shopeefood.vn/ha-noi/sushi-garden'], ['A-Phú - Mì Trộn Indomie & Ăn Vặt - Nguyễn Đức Cảnh', 'Giảm món', 'https://shopeefood.vn/ha-noi/a-phu-mi-tron-indomie-an-vat-nguyen-duc-canh'], ['Đức Food - Mì Trộn Indomie - Ngõ 95 Chùa Bộc', 'Giảm món', 'https://shopeefood.vn/ha-noi/duc-food-mi-tron-indomie-ngo-95-chua-boc'], ['Tiệm Mì Indo - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/tiem-mi-indo-kim-giang'], ['LATU Quán - Nem Nướng Nha Trang - Yên Phúc', 'Giảm món', 'https://shopeefood.vn/ha-noi/latu-quan-nem-nuong-nha-trang-yen-phuc'], ['Đức Food - Mì Trộn Indomie Online - Kim Giang', 'Giảm món', 'https://shopeefood.vn/ha-noi/duc-food-mi-tron-indomie-online-kim-giang'], ['Xuân Food - Mì Trộn Indomie - Tây Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/xuan-food-mi-tron-indomie-tay-son'], ['Duy Food - Mì Trộn Indomie', 'Giảm món', 'https://shopeefood.vn/ha-noi/duy-food-mi-tron-indomie'], ['Trà Sữa Bobapop - Đại Cồ Việt', 'Giảm hết 20%', 'https://shopeefood.vn/ha-noi/tra-sua-bobapop-dao-tan'], ['GÀ RÁN & BURGER GONGFU CHICKEN - 521 Nguyễn Trãi', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-burger-gongfu-chicken-521-nguyen-trai'], ['Trà Sữa Gong Cha - 貢茶 - Hoàng Đạo Thúy', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-gong-cha-hoang-dao-thuy'], ['Bánh Mì Tuhu Bread - Phố Nguyễn Sơn', 'Giảm món', 'https://shopeefood.vn/ha-noi/banh-mi-tuhu-bread-pho-nguyen-son'], ['Yên Đàm - Trà Sữa Thảo Dược', 'Giảm món', 'https://shopeefood.vn/ha-noi/yen-dam-tra-sua-thao-duoc'], ['Maru Korean - Tiệm Đồ Ăn Hàn Quốc & Trà Sữa - Lê Đại Hành', 'Giảm hết 5%', 'https://shopeefood.vn/ha-noi/maru-korean-tiem-do-an-han-quoc-tra-sua-le-dai-hanh'], ['Highlands Coffee - Trà, Cà Phê & Bánh - Imperia Garden', 'Giảm món', 'https://shopeefood.vn/ha-noi/highlands-coffee-tra-ca-phe-banh-imperia-garden'], ['Vinamilk - Giấc Mơ Sữa Việt - Định Công Thượng - AC10091', 'Giảm món', 'https://shopeefood.vn/ha-noi/vinamilk-giac-mo-sua-viet-dinh-cong-thuong-ac10091'], ["Domino's Pizza - Xuân La", 'Giảm món', 'https://shopeefood.vn/ha-noi/domino-s-pizza-xuan-la'], ['Trà Sữa Miutea - Phố Xốm', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-miutea-pho-xom'], ['Hủ Tiếu Thái Lan, Trà Sữa Thái, Ăn Vặt - Pi Thai - 136 Vũ Phạm Hàm', 'Giảm món', 'https://shopeefood.vn/ha-noi/hu-tieu-thai-lan-tra-sua-thai-an-vat-pi-thai-136-vu-pham-ham'], ['Sói Biển - Thực phẩm sạch - Số 8 Vũ Thạnh', 'Giảm món', 'https://shopeefood.vn/ha-noi/soi-bien-thuc-pham-sach-so-8-vu-thanh'], ['The Coffee House - Lê Thanh Nghị', 'Giảm món', 'https://shopeefood.vn/ha-noi/the-coffee-house-le-thanh-nghi'], ["Fam's Chicken - The Manor", 'Giảm món', 'https://shopeefood.vn/ha-noi/fam-s-chicken-the-manor'], ['Trà Sữa Sharetea Nhà Thờ - Phố Nguyễn Thị Định', 'Giảm món', 'https://shopeefood.vn/ha-noi/tra-sua-sharetea-nha-tho-pho-nguyen-thi-dinh'], ['Gà Rán Popeyes - Trần Quốc Hoàn', 'Giảm món', 'https://shopeefood.vn/ha-noi/ga-ran-popeyes-tran-quoc-hoan'], ['Cơm Thố Anh Nguyễn - Bán Đảo Linh Đàm', 'Flash Sale', 'https://shopeefood.vn/ha-noi/com-tho-anh-nguyen-ban-dao-linh-dam'], ['Burger King - Giảng Võ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/burger-king-giang-vo'], ['Cơm Tấm Delichi - Cơm Tấm Sườn Bì Chả - Phùng Khoang', 'Flash Sale', 'https://shopeefood.vn/ha-noi/com-tam-delichi-com-tam-suon-bi-cha-phung-khoang'], ['Trà Sữa ToCoToCo - 317 Trần Cung', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-317-tran-cung'], ['DLC Chicken - Gà Rán Giòn Tan - Quan Nhân', 'Flash Sale', 'https://shopeefood.vn/ha-noi/dlc-chicken-ga-ran-gion-tan-quan-nhan'], ['Bento Delichi - Cơm Gà Xối Mỡ, Cơm Gà Mắm Tỏi - Dương Khuê', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bento-delichi-com-ga-xoi-mo-com-ga-mam-toi-duong-khue'], ['Trà Sữa Tocotoco - Cầu Giấy', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-262-cau-giay'], ['Tiệm Chè Ngon Đảo Chè - Kem Xôi & Ăn Vặt - Lê Văn Thiêm - Shop Online', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-che-ngon-dao-che-kem-xoi-an-vat-le-van-thiem-shop-online'], ['Gà Rán Việt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-ran-viet'], ['December Tea - Trà Hoa Quả Nhiệt Đới & Mì Trộn Indomie - Định Công', 'Flash Sale', 'https://shopeefood.vn/ha-noi/december-tea-tra-hoa-qua-nhiet-doi-mi-tron-indomie-dinh-cong'], ['Gà Luộc & Gà Ủ Muối - Hẻm 65 Định Công Hạ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-luoc-ga-u-muoi-hem-65-dinh-cong-ha'], ['688 Food - Mỳ cay, Mỳ trộn & Mỳ tương đen - Mỹ Đình', 'Flash Sale', 'https://shopeefood.vn/ha-noi/688-food-my-cay-my-tron-my-tuong-den-my-dinh'], ['Coco Nama Tea Bar - Nguyễn Khánh Toàn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/coco-nama-tea-bar-nguyen-khanh-toan'], ['Mì Chua Cay Tim Cật - 4I', 'Flash Sale', 'https://shopeefood.vn/ha-noi/mi-chua-cay-tim-cat-4i'], ['Tiệm Trà Chè Sky - Mì Trộn Indomie, Trà Mãng Cầu, Trà Chanh - Thượng Đình', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-tra-che-sky-mi-tron-indomie-tra-mang-cau-tra-chanh-thuong-dinh'], ['Bếp Cô Tấm - Cháo Ngon & Ăn Vặt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bep-co-tam-chao-ngon-an-vat'], ['Tin Tin - Chim Cút Quay Móc Mật & Đồ Ăn Vặt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tin-tin-chim-cut-quay-moc-mat-do-an-vat'], ['SiA Lab - Phê cùng Trà', 'Flash Sale', 'https://shopeefood.vn/ha-noi/sia-lab-phe-cung-tra'], ['Odi Bakery - Trà & Bánh Ngọt - Phan Văn Trường', 'Flash Sale', 'https://shopeefood.vn/ha-noi/odi-bakery-tra-banh-ngot-phan-van-truong'], ['Gà Luộc & Gà Ủ Muối Hoa Tiêu & Gà Rán - Thanh Nhàn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-luoc-ga-u-muoi-hoa-tieu-ga-ran-thanh-nhan'], ['Chin Chin - Trà Sữa Đậm Vị & Trà Hoa Quả Tươi - Thuỵ Khuê', 'Flash Sale', 'https://shopeefood.vn/ha-noi/chin-chin-tra-sua-dam-vi-tra-hoa-qua-tuoi-thuy-khue'], ['Tiệm Bé Cá – Trà Sữa, Mỳ Ý & Sandwich', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-be-ca-tra-sua-my-y-sandwich'], ['Việt Nguyễn Coffee - Mai Anh Tuấn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/viet-nguyen-coffee-mai-anh-tuan'], ['Cúc - Cháo Sườn Sụn - Lạc Long Quân', 'Flash Sale', 'https://shopeefood.vn/ha-noi/cuc-chao-suon-sun-lac-long-quan'], ['Quang Tèo Food - Mì Trộn Indomie - Chợ Khâm Thiên', 'Flash Sale', 'https://shopeefood.vn/ha-noi/quang-teo-food-mi-tron-indomie-cho-kham-thien'], ['Thủy - Phở Gà Ta & Bún Thang', 'Flash Sale', 'https://shopeefood.vn/ha-noi/thuy-pho-ga-ta-bun-thang'], ['Namsan Chicken - Triệu Việt Vương', 'Flash Sale', 'https://shopeefood.vn/ha-noi/namsan-chicken-trieu-viet-vuong'], ['Bếp Mẹ Jo - Bún Mọc & Cháo Gà', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bep-me-jo-bun-moc-chao-ga'], ['Tocotoco - Goldsilk Complex', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tocotoco-goldsilk-complex'], ['Nước Ép Trái Cây - Chin’s Fruit Tô Hiệu', 'Flash Sale', 'https://shopeefood.vn/ha-noi/nuoc-ep-trai-cay-chin-s-fruit-to-hieu'], ['Ô Long Đây - 62 Ngọc Khánh', 'Flash Sale', 'https://shopeefood.vn/ha-noi/o-long-day-62-ngoc-khanh'], ['MinCha - Gà Ủ Muối, Mì Trộn Indomie & Đồ Ăn Vặt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/mincha-ga-u-muoi-mi-tron-indomie-do-an-vat'], ['Bánh Trung Thu & Mứt Tết Gia Truyền - Hùng Lương', 'Flash Sale', 'https://shopeefood.vn/ha-noi/banh-trung-thu-mut-tet-gia-truyen-hung-luong'], ['BUMTRO - Bún Trộn Nam Bộ - Ngọc Lâm', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bumtro-bun-tron-nam-bo-ngoc-lam'], ['Bún Riêu Cua Tóp Mỡ Huỳnh Anh CS3 - Nguyễn Văn Tuyết', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bun-rieu-cua-top-mo-huynh-anh-cs3-nguyen-van-tuyet'], ['Cô Tám - Cơm Rang & Cơm Tấm - 126 Hồng Mai', 'Flash Sale', 'https://shopeefood.vn/ha-noi/co-tam-com-rang-an-vat-126-hong-mai'], ['Mập Quán - Đồ Ăn Vặt & Mỳ Xào - Nguyên Hồng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/map-quan-do-an-vat-my-xao-nguyen-hong'], ['Tiệm Gà Ủ Muối - Gà Luộc & Gà Ủ Muối - Nguyễn Viết Xuân', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-ga-u-muoi-ga-luoc-ga-u-muoi-nguyen-viet-xuan'], ['Tiger Sugar - Vũ Trọng Phụng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiger-sugar-vu-trong-phung'], ['Tiệm Gà Ủ Muối - Gà Luộc & Gà Ủ Muối - Lê Quý Đôn 2', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-ga-u-muoi-ga-luoc-ga-u-muoi-le-quy-don-2'], ['Cơm Sốt hiMC - Cơm Sườn Tê Cay & Cơm Gà - Nguyễn Văn Trỗi', 'Flash Sale', 'https://shopeefood.vn/ha-noi/com-sot-himc-com-suon-te-cay-com-ga-nguyen-van-troi'], ['Tanka Quán - Chân Gà Nướng & Cánh Gà Nướng - Đê La Thành', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tanka-quan-chan-ga-nuong-canh-ga-nuong-de-la-thanh'], ['Nem Nướng Nha Trang Minh Đức - Nghĩa Tân', 'Flash Sale', 'https://shopeefood.vn/ha-noi/nem-nuong-nha-trang-minh-duc-nghia-tan'], ['Trà Sữa - Mỳ Cay & Đồ Ăn Vặt Huyền Linh - 47 Dương Quảng Hàm', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-my-cay-do-an-vat-huyen-linh-47-duong-quang-ham'], ['Han Chicken - Gà Rán Hàn Quốc - 한 치킨', 'Flash Sale', 'https://shopeefood.vn/ha-noi/han-chicken-ga-ran-han-quoc'], ['Trà Sữa Tocotoco - 271 Nguyễn Khang', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-tocotoco-271-nguyen-khang'], ['Bao Bao - Cơm Xá Xíu, Mỳ Chua Cay & Cháo Ếch - 213 Xã Đàn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bao-bao-com-xa-xiu-my-chua-cay-chao-ech-213-xa-dan'], ["Susi's Cake - Bông Lan Trứng Muối - Tôn Đức Thắng", 'Flash Sale', 'https://shopeefood.vn/ha-noi/susi-s-cake-bong-lan-trung-muoi-ton-duc-thang'], ['Bún Chả Ba Cô - Mễ Trì Hạ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bun-cha-ba-co-me-tri-ha'], ['Gà Rán & Pizza 99', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ga-ran-pizza-99'], ['Cổ Trà - Trà Shan Tuyết 300 Năm Tuổi & Trà Hoa Quả - 94 Trấn Vũ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/co-tra-tra-shan-tuyet-300-nam-tuoi-tra-hoa-qua-94-tran-vu'], ['Cơm Gà Sốt Cay, Cơm Trộn Cá Ngừ & Đồ Ăn Hàn - Moon 76', 'Flash Sale', 'https://shopeefood.vn/ha-noi/com-ga-sot-cay-com-tron-ca-ngu-do-an-han-moon-76'], ['Dương Dương - Lẩu Tokbokki, Mỳ Cay, Trà Chanh & Trà Tắc Online - Đồng Me', 'Flash Sale', 'https://shopeefood.vn/ha-noi/duong-duong-lau-tokbokki-my-cay-tra-chanh-tra-tac-online-dong-me'], ['Shiba Chef - Bánh Takoyaki & Bánh Xèo Nhật', 'Flash Sale', 'https://shopeefood.vn/ha-noi/shiba-chef-banh-takoyaki-banh-xeo-nhat'], ['Nui Cô Béo - Ngõ Văn Chương', 'Flash Sale', 'https://shopeefood.vn/ha-noi/nui-co-beo-ngo-van-chuong'], ['Quán Quen - Mỳ Chua Cay - 167 Tây Sơn', 'Flash Sale', 'https://shopeefood.vn/ha-noi/quan-quen-my-chua-cay-167-tay-son'], ['JapanDeli Express - Shophouse S07 Park 10 KĐT Vinhomes Times City Park Hill', 'Flash Sale', 'https://shopeefood.vn/ha-noi/japandeli-express-shophouse-s07-park-10-kdt-vinhomes-times-city-park-hill'], ['Hân - Tokbokki, Gà Sốt Cay Hàn Quốc & Ăn Vặt - Hồ Tùng Mậu', 'Flash Sale', 'https://shopeefood.vn/ha-noi/han-tokbokki-ga-sot-cay-han-quoc-an-vat-ho-tung-mau'], ['Bánh Mì Que Pate Hải Phòng & Chè - Cô Hạnh - Trung Kính', 'Flash Sale', 'https://shopeefood.vn/ha-noi/banh-mi-que-pate-hai-phong-che-co-hanh-trung-kinh'], ['Cháo Sườn Sụn Phố Cổ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/chao-suon-sun-pho-co'], ['Chimico - Cơm Trộn & Kim Chi Tỏi Đen - Cầu Giấy', 'Flash Sale', 'https://shopeefood.vn/ha-noi/chimico-com-tron-kim-chi-toi-den-cau-giay'], ['Bánh Mỳ Chảo 5 Châu - Nguyễn Văn Lộc', 'Flash Sale', 'https://shopeefood.vn/ha-noi/banh-my-chao-5-chau-nguyen-van-loc'], ['Bún Bò Huế Nam Minh - Nghĩa Tân', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bun-bo-hue-nam-minh-nghia-tan'], ['Cơm Rang Gà Sốt 30K - Mỹ Đình', 'Flash Sale', 'https://shopeefood.vn/ha-noi/com-rang-ga-sot-30k-my-dinh'], ['Bếp Cơm Gạo Lứt - Eat Clean & Healthy - Cầu Giấy - Shop Online', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bep-com-gao-lut-eat-clean-healthy-cau-giay-shop-online'], ['Hadu Y - Gà Rán, Pizza & Trà Sữa', 'Flash Sale', 'https://shopeefood.vn/ha-noi/hadu-y-ga-ran-pizza-tra-sua'], ['Mỳ Ếch Chua Cay Trần Quỳnh - 30 Nguyễn Thái Học', 'Flash Sale', 'https://shopeefood.vn/ha-noi/my-ech-chua-cay-tran-quynh-30-nguyen-thai-hoc'], ['Bún Chả Gánh - Nguyễn Hoàng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bun-cha-ganh-nguyen-hoang'], ['Thanh Hằng Quán - Phở & Cháo Các Loại', 'Flash Sale', 'https://shopeefood.vn/ha-noi/thanh-hang-quan-pho-chao-cac-loai'], ['Vịt Quay Chị Béoo', 'Flash Sale', 'https://shopeefood.vn/ha-noi/vit-quay-chi-beoo'], ['An Nam Cháo', 'Flash Sale', 'https://shopeefood.vn/ha-noi/an-nam-chao'], ['La Boong - 96 Láng Hạ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/la-boong-96-lang-ha'], ['King Cup - Cơm Thố Nhật - Liên Mạc', 'Flash Sale', 'https://shopeefood.vn/ha-noi/king-cup-com-tho-nhat-lien-mac'], ['Pizza Express - Kim Đồng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/pizza-express-kim-dong'], ['Chè Bưởi Tư Đỉnh - Lương Thế Vinh', 'Flash Sale', 'https://shopeefood.vn/ha-noi/che-buoi-tu-dinh-luong-the-vinh'], ['Bếp Nhà Châu - Eatclean & Healthy', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bep-nha-chau-eatclean-healthy'], ['Ngọc - Cháo Lòng Ngon & Bún Đậu Mẹt', 'Flash Sale', 'https://shopeefood.vn/ha-noi/ngoc-chao-long-ngon-bun-dau-met'], ["Papa's Kitchen - Đồ Ăn Hàn Quốc & Tokbokki, Cơm Trộn - Hồng Mai", 'Flash Sale', 'https://shopeefood.vn/ha-noi/papa-s-kitchen-do-an-han-quoc-tokbokki-com-tron-hong-mai'], ['Bún Chả Cô Bằng - Ngõ 5 Khuất Duy Tiến', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bun-cha-co-bang-ngo-5-khuat-duy-tien'], ['Chân Gà Nướng Thịnh Vượng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/chan-ga-nuong-thinh-vuong'], ['Mokchang - Đồ Ăn Hàn Quốc - Láng Hạ', 'Flash Sale', 'https://shopeefood.vn/ha-noi/mokchang-do-an-han-quoc-lang-ha'], ['Minh Food - Nem Chua Rán Và Xiên Que', 'Flash Sale', 'https://shopeefood.vn/ha-noi/minh-food-nem-chua-ran-va-xien-que'], ['Cơm Tấm Phương Anh - Bạch Mai', 'Flash Sale', 'https://shopeefood.vn/ha-noi/com-tam-phuong-anh-bach-mai'], ['Tiệm Gà Rán ChiPi - Hồ Tùng Mậu', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tiem-ga-ran-chipi-ho-tung-mau'], ['Chân Gà Rút Xương Sả Ớt - Sốt Thái - Mai Kim Thuý - Cầu Giấy', 'Flash Sale', 'https://shopeefood.vn/ha-noi/chan-ga-rut-xuong-sa-ot-sot-thai-mai-kim-thuy-cau-giay'], ['Tâm An - Nem Nướng Nha Trang - Lê Quang Đạo', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tam-an-nem-nuong-nha-trang-le-quang-dao'], ['Hoa Béo - Nem Nướng Ninh Hòa - Phạm Ngọc Thạch', 'Flash Sale', 'https://shopeefood.vn/ha-noi/hoa-beo-nem-nuong-ninh-hoa-pham-ngoc-thach'], ['Gugsumi - Cơm Gà & Cơm Văn Phòng - Yên Phúc', 'Flash Sale', 'https://shopeefood.vn/ha-noi/gugsumi-com-ga-com-van-phong-yen-phuc'], ['Trà Sữa HAPPY - KĐT Đô Nghĩa', 'Flash Sale', 'https://shopeefood.vn/ha-noi/tra-sua-happy-kdt-do-nghia'], ['Long Xã Đàn - Bún Sườn Chua - Chùa Láng', 'Flash Sale', 'https://shopeefood.vn/ha-noi/long-xa-dan-bun-suon-chua-chua-lang'], ['LOTTERIA KIM GIANG', 'Flash Sale', 'https://shopeefood.vn/ha-noi/lotteria-kim-giang'], ['Bún Bò Huế Bến Ngự - Lạc Trung', 'Flash Sale', 'https://shopeefood.vn/ha-noi/bun-bo-hue-ben-ngu-lac-trung']]
+[2024-09-12T11:02:16.892+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_list_restaurant, execution_date=20240911T000000, start_date=20240912T110124, end_date=20240912T110216
+[2024-09-12T11:02:16.958+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-09-12T11:02:16.999+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
