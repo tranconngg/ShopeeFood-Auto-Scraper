@@ -4,5 +4,5 @@ Technology used: Selenium, pandas, airflow, docker, mysql
 
 
 
-![image](https://github.com/user-attachments/assets/4ba2cab4-df57-4178-be73-c3e7b0165e9a)
+![Preliminary report on stores in the area](./image/report.png)
 
