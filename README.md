@@ -4,5 +4,5 @@ Technology used: Selenium, pandas, airflow, docker, mysql
 
 
 
-![Preliminary report on stores in the area](./image/report.png)
+![Preliminary report on stores in the area](https://github.com/tranconngg/ShopeeFood-Auto-Scraper/blob/main/Shopeefood_Auto_Scraper/image/report.png)
 
