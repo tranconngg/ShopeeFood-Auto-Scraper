@@ -15,10 +15,10 @@ default_args = {
 }
 
 dag = DAG(
-    'shopeefood_crawl_and_report', 
+    'shopeefood_crawl_and_report',
     default_args=default_args,
     description='A DAG to crawl ShopeeFood data, process it, and send a report',
-    schedule_interval='@daily',
+    schedule_interval='0 8 * * *',  
     catchup=False,
 )
 

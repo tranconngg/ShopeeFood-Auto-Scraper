@@ -1,0 +1,55 @@
+[2024-11-12T06:17:15.163+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-11-12T06:14:01.887574+00:00 [queued]>
+[2024-11-12T06:17:15.178+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-11-12T06:14:01.887574+00:00 [queued]>
+[2024-11-12T06:17:15.178+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-11-12T06:17:15.199+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): crawl_restaurant_details> on 2024-11-12 06:14:01.887574+00:00
+[2024-11-12T06:17:15.208+0000] {standard_task_runner.py:60} INFO - Started process 809 to run task
+[2024-11-12T06:17:15.212+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'shopeefood_crawl_and_report', 'crawl_restaurant_details', 'manual__2024-11-12T06:14:01.887574+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpdaj8w1c6']
+[2024-11-12T06:17:15.215+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask crawl_restaurant_details
+[2024-11-12T06:17:15.278+0000] {task_command.py:423} INFO - Running <TaskInstance: shopeefood_crawl_and_report.crawl_restaurant_details manual__2024-11-12T06:14:01.887574+00:00 [running]> on host e6f22caecd6e
+[2024-11-12T06:17:15.384+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shopeefood_crawl_and_report' AIRFLOW_CTX_TASK_ID='crawl_restaurant_details' AIRFLOW_CTX_EXECUTION_DATE='2024-11-12T06:14:01.887574+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-12T06:14:01.887574+00:00'
+[2024-11-12T06:21:37.083+0000] {logging_mixin.py:188} INFO - Lỗi khi chờ đợi sản phẩm: Message: 
+Stacktrace:
+#0 0x55d24fad06b3 <unknown>
+#1 0x55d24f7a61e7 <unknown>
+#2 0x55d24f7ed566 <unknown>
+#3 0x55d24f7ed651 <unknown>
+#4 0x55d24f82aa74 <unknown>
+#5 0x55d24f80f0ed <unknown>
+#6 0x55d24f828322 <unknown>
+#7 0x55d24f80ee93 <unknown>
+#8 0x55d24f7e1934 <unknown>
+#9 0x55d24f7e271e <unknown>
+#10 0x55d24fa95cb8 <unknown>
+#11 0x55d24fa99bf0 <unknown>
+#12 0x55d24faa419c <unknown>
+#13 0x55d24fa9a808 <unknown>
+#14 0x55d24fa6727f <unknown>
+#15 0x55d24fabee88 <unknown>
+#16 0x55d24fabf059 <unknown>
+#17 0x55d24facf843 <unknown>
+#18 0x7f778f94b609 start_thread
+[2024-11-12T07:10:43.021+0000] {logging_mixin.py:188} INFO - Lỗi khi chờ đợi sản phẩm: Message: 
+Stacktrace:
+#0 0x556eaf0ec6b3 <unknown>
+#1 0x556eaedc21e7 <unknown>
+#2 0x556eaee09566 <unknown>
+#3 0x556eaee09651 <unknown>
+#4 0x556eaee46a74 <unknown>
+#5 0x556eaee2b0ed <unknown>
+#6 0x556eaee44322 <unknown>
+#7 0x556eaee2ae93 <unknown>
+#8 0x556eaedfd934 <unknown>
+#9 0x556eaedfe71e <unknown>
+#10 0x556eaf0b1cb8 <unknown>
+#11 0x556eaf0b5bf0 <unknown>
+#12 0x556eaf0c019c <unknown>
+#13 0x556eaf0b6808 <unknown>
+#14 0x556eaf08327f <unknown>
+#15 0x556eaf0dae88 <unknown>
+#16 0x556eaf0db059 <unknown>
+#17 0x556eaf0eb843 <unknown>
+#18 0x7fe39076e609 start_thread
+[2024-11-12T07:20:43.964+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-11-12T07:20:43.981+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=shopeefood_crawl_and_report, task_id=crawl_restaurant_details, execution_date=20241112T061401, start_date=20241112T061715, end_date=20241112T072043
+[2024-11-12T07:20:44.049+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-11-12T07:20:44.108+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
